@@ -1,0 +1,98 @@
+ var candidatos = [{
+                    nombre: "Eric Garcia",
+                    estatus: "Registrado",
+                    plataforma: "OCC Mundial",
+                    postulacion: '12/08/2020',
+                    contactos: 5,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class="fas fa-question-circle"></i></a>',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class="fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class="fas fa-times"></i></a>',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                {
+                    nombre: "Fernando Montaño",
+                    estatus: "Registrado",
+                    plataforma: "Computrabajo",
+                    postulacion: '14/09/2020',
+                    contactos: 2,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a > ',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"> </i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                {
+                    nombre: "Jairo Rebollo",
+                    plataforma: "Indeed",
+                    estatus: "Registrado",
+                    postulacion: '13/08/2020',
+                    contactos: 2,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"></i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                {
+                    nombre: "Ricardo Gúzman",
+                    plataforma: "Linkedin",
+                    estatus: "Registrado",
+                    postulacion: '13/08/2020',
+                    contactos: 1,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"></i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                {
+                    nombre: "Daniel R",
+                    plataforma: "Indeed",
+                    estatus: "Registrado",
+                    postulacion: '14/08/2020',
+                    contactos: 2,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"></i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                {
+                    nombre: "Juan Aparicio",
+                    plataforma: "Facebook",
+                    estatus: "Registrado",
+                    postulacion: '14/08/2020',
+                    contactos: 2,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"></i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                {
+                    nombre: "Adela N",
+                    plataforma: "Indeed",
+                    estatus: "Registrado",
+                    postulacion: '15/08/2020',
+                    contactos: 3,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"></i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                },
+                 {
+                    nombre: "Alejandro Molina",
+                    plataforma: "Indeed",
+                    estatus: "En Proceso",
+                    postulacion: '15/08/2020',
+                    contactos: 3,
+                    cv: '<a data-toggle="modal" data-target="#CV" style="color:black;"><i class="fas fa-file-pdf"></i></a>',
+                    entrevista: '<a data-toggle="modal" data-target="#nuevaEntrevista" style="color:black;"><i class = "fas fa-question-circle"></i></a > ',
+                    detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class = "fas fa-eye"></i></a>',
+                    descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class = "fas fa-times"></i></a >',
+                    restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
+                }
+
+            ];

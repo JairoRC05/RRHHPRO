@@ -1,0 +1,80 @@
+  <table class="table">
+      <thead id="tableRequerimientos">
+          <tr>
+              <th>Requerimiento</th>
+              <th>Fecha Ingreso</th>
+              <th>Fecha Registro</th>
+              <th>Cliente</th>
+              <th>Estatus</th>
+              <th>Ver</th>
+              <th>Editar</th>
+
+          </tr>
+      </thead>
+      <tbody id="bodyReq">
+
+      </tbody>
+  </table>
+
+  <script src="../../../json/requerimientos.json"></script>
+  <script>
+      $('th').click(function () {
+          var table = $(this).parents('table').eq(0)
+          var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+          this.asc = !this.asc
+          if (!this.asc) {
+              rows = rows.reverse()
+          }
+          for (var i = 0; i < rows.length; i++) {
+              table.append(rows[i])
+          }
+          setIcon($(this), this.asc);
+      })
+
+      function
+      comparer(index) {
+          return function (a, b) {
+              var valA = getCellValue(a, index),
+                  valB = getCellValue(b, index)
+              return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.localeCompare(valB)
+          }
+      }
+
+      function
+      getCellValue(row, index) {
+          return $(row).children('td').eq(index).html()
+      }
+
+      function setIcon(element, asc) {
+          $("th").each(function (index) {
+              $(this).removeClass("sorting");
+              $(this).removeClass("asc");
+              $(this).removeClass("desc");
+          });
+          element.addClass("sorting");
+          if (asc) element.addClass("asc");
+          else
+              element.addClass("desc");
+      }
+  </script>
+
+  <script>
+      let bodyReq = document.getElementById("bodyReq");
+
+      while (bodyReq.rows.length > 0) {
+          bodyReq.deleteRow(0);
+      }
+
+      requerimientos.forEach(requerimiento => {
+          let fila = bodyReq.insertRow(bodyReq.rows.length);
+          console.log(fila);
+
+          fila.insertCell(0).innerHTML = requerimiento.nombre;
+          fila.insertCell(1).innerHTML = requerimiento.ingreso;
+          fila.insertCell(2).innerHTML = requerimiento.registro;
+          fila.insertCell(3).innerHTML = requerimiento.cliente;
+          fila.insertCell(4).innerHTML = requerimiento.estatus;
+          fila.insertCell(5).innerHTML = requerimiento.ver;
+          fila.insertCell(6).innerHTML = requerimiento.editar;
+      });
+  </script>

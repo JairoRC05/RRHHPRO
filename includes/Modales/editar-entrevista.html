@@ -1,0 +1,148 @@
+  <div class="modal fade" id="EditEntre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title text-capitalize" id="exampleModalCenterTitle">
+                      Editar entrevista
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+
+                  <div class="form-row">
+                      <div class="form-group col-xl-6">
+                          <label class="text-capitalize">Candidato*</label>
+                          <input type="text" class="form-control " placeholder="Fernando Montaño" disabled>
+                      </div>
+                      <div class="form-group col-xl-6">
+                          <label class="text-capitalize">Requerimiento*</label>
+                          <input type="text" class="form-control " placeholder="Desarrollador WEB Junior" disabled>
+                      </div>
+
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-xl-6">
+                          <label class="text-capitalize">Entrevista*</label>
+                          <select class="form-control" id="clienteEdit">
+                              <option id="1">Cliente</option>
+                              <option id="2">RRHH</option>
+                              <option id="3">Técnica</option>
+                              <option id="4">Adicional</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-xl-6">
+                          <label class="text-capitalize">Responsable*</label>
+                          <select class="form-control ">
+                              <option>Eric Garcia</option>
+                              <option>Ricardo Guzman</option>
+                              <option>Daniel R</option>
+                              <option>Jairo Rebollo</option>
+                          </select>
+                      </div>
+
+                  </div>
+
+                  <div class="form-row" id="client1">
+                      <div class="form-group col-xl-6">
+                          <label class="text-normal">Cliente*</label>
+                          <select class="form-control ">
+                              <option>UBS</option>
+                              <option>Televisa</option>
+                              <option>Credito Seguro</option>
+                              <option>Banco Portugal</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-xl-6">
+                          <label class="text-normal">Contacto*</label>
+                          <select class="form-control ">
+
+                          </select>
+                      </div>
+
+                  </div>
+
+
+
+                  <div class="form-row">
+                      <div class="form-group col-xl-6">
+                          <label class="text-capitalize">Fecha*</label>
+                          <input type="date" class="form-control">
+                      </div>
+                      <div class="form-group col-xl-6">
+                          <label class="text-capitalize">Hora*</label>
+                          <input type="time" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-xl-6">
+                          <label class="text-normal">Medio de Comunicación*</label>
+                          <select class="form-control ">
+                              <option>Correo Electrónico</option>
+                              <option>Llamada Teléfonica</option>
+                              <option>Facebook Messenger</option>
+                              <option>Whatsapp</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-xl-6">
+                          <label class="text-normal">Zona*</label>
+                          <select class="form-control " id="zonaEdit">
+                              <option id="1">Polanco</option>
+                              <option id="2">Remoto</option>
+
+                          </select>
+                      </div>
+
+                  </div>
+
+
+                  <div class="form-row" id="lugar1">
+                      <div class="form-group col-xl-12">
+                          <label class="text-normal">Dirección*</label>
+                          <textarea class="form-control"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-xl-12">
+                          <label class="text-normal">Motivo*</label>
+                          <textarea class="form-control"></textarea>
+                          <small class="text-normal">En caso de reagendar*</small>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-xl-12">
+                          <label class="text-normal">Observaciones*</label>
+                          <textarea class="form-control"></textarea>
+                      </div>
+                  </div>
+
+
+
+              </div>
+              <div class="modal-footer">
+                  <div class="container-fluid d-flex justify-content-end">
+                      <button type="button" class="btn text-uppercase bg-danger text-white mx-1" data-dismiss="modal"><i
+                              class="fas fa-times"></i></button>
+                      <button type="button" class="btn text-uppercase bg-success text-white"><i
+                              class="fas fa-save"></i></button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+
+
+  <script>
+      $('#clienteEdit').change(function () {
+          $('#client1').hide();
+          $('#client' + $(this).find('option:selected').attr('id')).show();
+      });
+      $('#zonaEdit').change(function () {
+          $('#lugar1').hide();
+          $('#lugar' + $(this).find('option:selected').attr('id')).show();
+      });
+  </script>

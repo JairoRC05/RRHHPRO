@@ -1,0 +1,115 @@
+   <div class="modal fade" id="EEx" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+       aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalCenterTitle"><strong>Editar Examen</strong>
+                   </h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+               <div class="modal-body">
+                   <div class="form-group row">
+                       <div class="col-xl-12 ">
+                           <label class="text-capitalize">examen*</label>
+                           <select class="form-control  ">
+                               <option>CSS Básico</option>
+                               <option>Java</option>
+                               <option>Mongo DB</option>
+                               <option>My SQL</option>
+                               <option>Photoshop 4</option>
+                               <option>Psicométrico</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="form-group row">
+                       <div class="col-xl-12">
+                           <label class="text-capitalize">Candidato*</label>
+                           <select class="form-control  ">
+                               <option>Eric Garcia</option>
+                               <option>Fernando Montaño</option>
+                               <option>Daniel Ro</option>
+                               <option>Ricardo Gúzman</option>
+                               <option>Jairo Rebollo</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="form-group row">
+                       <div class="col-xl-12">
+                           <label class="text-capitalize">Responsable*</label>
+                           <select class="form-control  ">
+                               <option>Aracely Rojas</option>
+                               <option>Carlos Sandoval</option>
+                               <option>Franciso Massé</option>
+                               <option>Rafael Servin</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="form-group row">
+                       <div class="col-xl-12">
+                           <label class="text-normal">Fecha del Examen*</label>
+                           <input type="date" class="form-control " id="inputpassword" placeholder="">
+                       </div>
+                   </div>
+
+                   <div class="form-group row">
+                       <div class="col-xl-12">
+                           <label class="text-capitalize">Duración (Horas)*</label>
+                           <input type="number" class="form-control " id="inputpassword">
+                       </div>
+                   </div>
+                   <div class="form-group row">
+                       <div class="col-xl-12">
+                           <label class="text-capitalize">Medio de Comunicación*</label>
+                           <select class="form-control  ">
+                               <option>Correo Electrónico</option>
+                               <option>Facebook Messenger</option>
+                               <option>Llamada Telefónica</option>
+                               <option>Twitter</option>
+                               <option>Whatsapp</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="form-group row">
+                       <div class="col-xl-12">
+                           <label class="text-capitalize">Ubicación*</label>
+                           <select class="form-control" id="edit">
+                               <option id="1">Oficina</option>
+                               <option id="2">Remoto</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="form-group row" id="eDireccion1">
+                       <div class="col-xl-12">
+                           <label class="text-capitalize">Dirección*</label>
+                           <textarea class="form-control"></textarea>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xl-12">
+                           <small class="form-text text-muted">* Campos obligatorios</small>
+
+                           </select>
+                       </div>
+                   </div>
+               </div>
+
+
+               <div class="modal-footer">
+                   <a type="button" class="btn btn-sm bg-success text-white">Guardar <i class="fas fa-save"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   </div>
+
+
+
+   <script>
+       $('#edit').change(function () {
+           $('#eDireccion1').hide();
+           $('#eDireccion' + $(this).find('option:selected').attr('id')).show();
+       });
+   </script>

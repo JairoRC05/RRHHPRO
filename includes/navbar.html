@@ -1,0 +1,76 @@
+    <nav class="navbar navbar-expand-lg border-bottom bg-white">
+        <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+        <span class="navbar-brand mb-0 h1" id="menu-toggle"><strong>RRHH</strong></span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-toggle="tooltip" data-placement="top" title="INICIO">
+                        <i class=" fas fa-home mr-2"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="CANDIDATOS">
+                        <i class=" fas fa-address-book mr-2 text-dark"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="USUARIOS">
+                        <i class=" fas fa-users mr-2"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="CONTRATACIÓN">
+                        <i class=" fas fa-handshake mr-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="modulo-examen.html" class="nav-link" data-toggle="tooltip" data-placement="top"
+                        title="EXÁMENES">
+                        <i class=" fas fa-graduation-cap mr-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="EMPLEADOS">
+                        <i class=" fas fa-briefcase mr-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="ADMINISTRACIÓN">
+                        <i class=" fas fa-chart-bar mr-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-toggle="tooltip" data-placement="top" title="CONFIGURACIÓN">
+                        <i class=" fas fa-cogs mr-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="seguridad.html" class="nav-link" data-toggle="tooltip" data-placement="top"
+                        title="SEGURIRDAD">
+                        <i class=" fas fa-shield-alt mr-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil" class="nav-link" data-toggle="tooltip" data-placement="top"
+                        title="MI PERFIL"> <i class="fas fa-user-circle"></i> USER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#logoutModal" data-toggle="modal">
+                        <i class="fas fa-power-off" data-placement="top" title="CERRAR SESIÓN"
+                            data-toggle="tooltip"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>

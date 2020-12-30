@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>RRHH WEBAPP | INICIO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+
+<body>
+
+    <div class="m-responsivo"></div>
+
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="s-sidebar"></div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <div class="n-navbar"></div>
+
+
+            <div class="container-fluid">
+
+                <div class="container-st">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <h5><strong>ENTREVISTAS</strong> </h5>
+                        </div>
+                        <div class="col-xl-6 d-flex justify-content-end">
+                            <a type="button" class="btn btn-sm bg-success text-white" style="margin-right: 5px;"
+                                data-target="#AddEntre" data-toggle="modal">
+                                <i class=" fas fa-plus" data-placement="top" title="NUEVA ENTREVISTA"
+                                    data-toggle=" tooltip"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container-st">
+                    <!-- <div class="row">
+                        <div class="col-xl-12">
+                            <ul class="nav nav-tabs nav-justified nav-pills">
+
+                                <li class="nav-item">
+                                    <a href="#eRH" class="nav-link " role="tab" data-toggle="tab">RRHH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#eTecnica" class="nav-link" role="tab" data-toggle="tab">TÉCNICA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#eCliente" class="nav-link" role="tab" data-toggle="tab">CLIENTE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#eAdcional" class="nav-link" role="tab" data-toggle="tab">ADICIONAL</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <table id="usuariosT" class="table table-hover display">
+                        <thead class="thead">
+                            <tr>
+                                <th scope="col">CANDIDATO</th>
+                                <th scope="col">PLATAFORMA</th>
+                                <th scope="col" style="text-align: center;">FECHA REGISTRO</th>
+                                <th scope="col" style="text-align: center;">ESTATUS</th>
+                                <th scope="col" style="text-align: center;">DETALLES</th>
+
+                                <!-- <th scope="col" style="text-align: center;">DETALLE</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FERNANDO MONTAÑO</td>
+                                <td>OCC MUNDIAL</td>
+                                <td style="text-align: center;">09/12/2020</td>
+                                <td style="text-align: center;">FINALISTA</td>
+                                <td style="text-align: center;"><a class="" href="detalles-entrevistas.html"
+                                        style="color:black;">
+                                        <i class="fas fa-eye"></i> </a></td>
+                            </tr>
+                            <tr>
+                                <td>RICARDO GÚZMAN</td>
+                                <td>COMPUTRABAJO</td>
+                                <td style="text-align: center;">09/12/2020</td>
+                                <td style="text-align: center;">EN PROCESO</td>
+                                <td style="text-align: center;"><a class="" href="detalles-entrevistas.html"
+                                        style="color:black;">
+                                        <i class="fas fa-eye"></i> </a></td>
+                            </tr>
+                            <tr>
+                                <td>JAIRO REBOLLO</td>
+                                <td>OCC MUNDIAL</td>
+                                <td style="text-align: center;">09/12/2020</td>
+                                <td style="text-align: center;">REGISTRADO</td>
+                                <td style="text-align: center;"><a class="" href="detalles-entrevistas.html"
+                                        style="color:black;">
+                                        <i class="fas fa-eye"></i> </a></td>
+                            </tr>
+                            <tr>
+                                <td>ERIC GARCIA</td>
+                                <td>LINKDIN</td>
+                                <td style="text-align: center;">09/12/2020</td>
+                                <td style="text-align: center;">REGISTRADO</td>
+                                <td style="text-align: center;"><a class="" href="detalles-entrevistas.html"
+                                        style="color:black;">
+                                        <i class="fas fa-eye"></i> </a></td>
+                            </tr>
+                            <tr>
+                                <td>DANIEL</td>
+                                <td>INDEED</td>
+                                <td style="text-align: center;">09/12/2020</td>
+                                <td style="text-align: center;">EN PROCESO</td>
+                                <td style="text-align: center;"><a class="" href="detalles-entrevistas.html"
+                                        style="color:black;">
+                                        <i class="fas fa-eye"></i> </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+
+            </div>
+            <div class="modal fade" id="AddEntre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                AGREGAR ENTREVISTA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+                                            <li class="nav-item">
+                                                <a href="#eRegEntre" class="nav-link active " role="tab"
+                                                    data-toggle="tab">REGISTRO</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <div class="tab-pane fade show active" id="eRegEnte" role="tabpanel">
+                                        <div class="container-fluid bg-gray py-3">
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">ENTREVISTA*:
+                                                </label>
+                                                <div class="col-sm-12">
+
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword"
+                                                    class="col-sm-12 col-form-label">RESPONSABLE*:
+                                                </label>
+                                                <div class="col-sm-12">
+
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <label for="inputPassword" class="form-label">FECHA Y
+                                                            HORA*:
+                                                        </label>
+
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <input type="date" class="form-control"
+                                                                    id="inputPassword">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <input type="time" class="form-control"
+                                                                    id="inputPassword">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">MEDIO DE
+                                                    COMUNICACIÓN*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE QUE SEA CON EL CLIENTE</small>
+
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">CLIENTE*:
+                                                </label>
+
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">CONTACTO*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">ZONA*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                        <option>POLANCO</option>
+                                                        <option>SANTA FE</option>
+                                                        <option>ROMA NORTE</option>
+                                                        <option>REFORMA</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE REGISTRAR LA
+                                                    UBICACIÓN</small>
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">DIRECCIÓN
+                                                    DE
+                                                    LA ENTREVISTA*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-group row">
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE REAGENDAR</small>
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">MOTIVO*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div> -->
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="OBS" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title " id="exampleModalCenterTitle">Observaciones
+                            </h5>
+                            <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="container-fluid">
+                                <table class="table table-hover table-striped  display" id="clientesT">
+                                    <thead class="thead  w-auto">
+                                        <tr>
+                                            <th scope="col">Usuario</th>
+                                            <th scope="col" style="text-align: center;">Fecha</th>
+                                            <th scope="col" style="text-align: center;">Asistió</th>
+                                            <th scope="col" style="text-align: center;">No. Intentos</th>
+                                            <th scope="col" style="text-align: center;">Ültimo Medio</th>
+                                            <th scope="col" style="text-align: center;">Ver</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">CSandoval</th>
+                                            <td style="text-align: center;">00/00/0000</td>
+                                            <td style="text-align: center;">Si</td>
+                                            <td style="text-align: center;">5</td>
+                                            <td style="text-align: center;">Correo Electrónico</td>
+                                            <td style="text-align: center;"><a href="preguntas2.html"><i
+                                                        class="fas fa-eye"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">FernandoM</th>
+                                            <td style="text-align: center;">00/00/0000</td>
+                                            <td style="text-align: center;">Si</td>
+                                            <td style="text-align: center;">5</td>
+                                            <td style="text-align: center;">Correo Electrónico</td>
+                                            <td style="text-align: center;"><a href="preguntas2.html"><i
+                                                        class="fas fa-eye"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">ARojas</th>
+                                            <td style="text-align: center;">00/00/0000</td>
+                                            <td style="text-align: center;">NO</td>
+                                            <td style="text-align: center;">4</td>
+                                            <td style="text-align: center;">Correo Electrónico
+                                            </td>
+                                            <td style="text-align: center;"><a href="preguntas2.html"><i
+                                                        class="fas fa-eye"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">RafaelS</th>
+                                            <td style="text-align: center;">00/00/0000</td>
+                                            <td style="text-align: center;">SI</td>
+                                            <td style="text-align: center;">4</td>
+                                            <td style="text-align: center;">Correo Electrónico
+                                            </td>
+                                            <td style="text-align: center;"><a href="preguntas2.html"><i
+                                                        class="fas fa-eye"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="modal fade" id="EditEntre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                EDITAR ENTREVISTA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+                                            <li class="nav-item">
+                                                <a href="#eRegEntre" class="nav-link active " role="tab"
+                                                    data-toggle="tab">REGISTRO</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <div class="tab-pane fade show active" id="eRegEnte" role="tabpanel">
+                                        <div class="container-fluid bg-gray py-3">
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">ENTREVISTA*:
+                                                </label>
+                                                <div class="col-sm-12">
+
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword"
+                                                    class="col-sm-12 col-form-label">RESPONSABLE*:
+                                                </label>
+                                                <div class="col-sm-12">
+
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <label for="inputPassword" class="form-label">FECHA Y
+                                                            HORA*:
+                                                        </label>
+
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <input type="date" class="form-control"
+                                                                    id="inputPassword">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <input type="time" class="form-control"
+                                                                    id="inputPassword">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">MEDIO DE
+                                                    COMUNICACIÓN*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE QUE SEA CON EL CLIENTE</small>
+
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">CLIENTE*:
+                                                </label>
+
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">CONTACTO*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">ZONA*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                        <option>POLANCO</option>
+                                                        <option>SANTA FE</option>
+                                                        <option>ROMA NORTE</option>
+                                                        <option>REFORMA</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE REGISTRAR LA
+                                                    UBICACIÓN</small>
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">DIRECCIÓN
+                                                    DE
+                                                    LA ENTREVISTA*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE REAGENDAR</small>
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">MOTIVO*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Modal Plantillas -->
+            <div class="modal fade" id="newReq" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">NUEVO REQUERIMIENTO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <a href="nuevo-requisito copy.html" type="button" class="btn btn-light w-100">EN
+                                            BLANCO</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-4">
+                                <strong>
+                                    <p>PLANTILLAS: </p>
+                                </strong>
+
+                                <div class="col-12 mt-1">
+                                    <button type="button" class="btn bg-marine w-100">DEV. KOTLIN JR.</button>
+                                </div>
+
+                                <div class="col-12 mt-1">
+                                    <button type="button" class="btn bg-marine w-100">DEV. FRONTEND
+                                        REACT</button>
+                                </div>
+
+                                <div class="col-12 mt-1">
+                                    <button type="button" class="btn bg-marine w-100">DEV. BACKEND
+                                        JAVA</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End -->
+
+            <div class="modal fade" id="agregarPub" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">PUBLICACIÓN EXTERNA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <label for="exampleFormControlInput1">SELECCIONE UNA PLATAFORMA</label>
+                                    <select class="form-control form-control-lg w-100"
+                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">FECHA DE PUBLICACIÓN</label>
+                                    <input type="date" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">FECHA LÍMITE</label>
+                                    <input type="date" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">LIGA DE LA PUBLICACIÓN</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="www.xxxxxxxxxxx.com">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">ID</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="0000000">
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="modal fade" id="React" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">REACTIVAR / BAJA</h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">MOTIVO:
+                            </label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control w-100" id="inputPassword">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="AUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">AGREGAR/EDITAR/DETALLES
+                                CANDIDATO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">NOMBRE</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">APELLIDO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">CORREO ELECTRÓNICO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">DIRECCIÓN</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">ESTADO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="EDO. MEX., PUEBLA...." disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">VACANTE</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="DESARROLLADOR BACKEND JAVA" disabled>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="row">
+        <div class="col-3">VACANTE</div>
+        <div class="col-2">CREACIÓN</div>
+        <div class="col-2">LÍMITE</div>
+        <div class="col-1">INSCRITOS</div>
+        <div class="col-2">EN PROCES0</div>
+        <div class="col-1">DESCARTADOS</div>
+        <div class="col-1">FINALISTAS</div>
+      </div>
+      <div class="row">
+        <div class="col-3 bg-primary">VACANTE</div>
+        <div class="col-2 bg-primary">01/00/2020</div>
+        <div class="col-2 bg-primary">01/00/2020</div>
+        <div class="col-1 bg-primary">12</div>
+        <div class="col-2 bg-primary">12</div>
+        <div class="col-1 bg-primary">12</div>
+        <div class="col-1 bg-primary">12</div>
+      </div>
+    </div>  -->
+
+
+
+            <!--Modal Cerrar Sesión-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">Cerrar sesión</h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center py-5">
+                            <h4 class="text-uppercase">
+                                ¿seguro de cerrar sesión?
+                            </h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bg-marine" data-dismiss="modal">No</button>
+                            <a class="btn bg-marine" href="login.html" role="button">Si</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- PREVIEW -->
+            <div class="modal fade" id="Preview" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">DESARROLLADOR
+                                .NET SENIOR
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p><strong> DESARROLLADOR .NET SENIOR</strong></p>
+
+                                    <p><strong>REQUISITOS</strong></p>
+
+                                    <p>Experiencia mínima: 8 años</p>
+                                    <ul>
+                                        <li>.NET</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+
+                                    <p><strong>HABILIDADES</strong></p>
+                                    <ul>
+                                        <li>C#</li>
+                                        <li>ASP Net</li>
+                                        <li>ADO Net</li>
+                                        <li>Javascript</li>
+                                        <li>JQuery</li>
+                                        <li>Soap</li>
+                                        <li>Rest XML</li>
+                                        <li>JSON</li>
+                                        <li>.Net Framework</li>
+                                        <li>.Net Core</li>
+                                        <li>MVC</li>
+                                        <li>ORACLE</li>
+                                        <li>PMi</li>
+                                        <li>CMMi</li>
+                                        <li>ITIL</li>
+                                        <li>ISO</li>
+                                    </ul>
+
+                                    <p><strong>CONOCIMIENTOS DESEABLES:</strong></p>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>F#</li>
+                                        <li>LinQ</li>
+                                        <li>NodeJS</li>
+                                        <li>Base de Datos Hadoop</li>
+                                        <li>Diseño de Arquitecturas</li>
+                                    </ul>
+
+                                    <p><strong>IDIOMAS</strong></p>
+                                    <ul>
+                                        <li> Ingles Intermedio.</li>
+                                    </ul>
+
+
+                                    <p> <strong>SOFT SKILLS:</strong></p>
+                                    <ul>
+                                        <li>Analítico</li>
+                                        <li>Solucionador de problemas</li>
+                                        <li>Comunicación oral</li>
+                                        <li>Escrita efectiva</li>
+                                        <li>Autodidacta</li>
+                                        <l>Capacidad para liderar equipos de trabajo.</l>
+                                    </ul>
+
+                                    <strong>
+                                        <p>OFRECEMOS:</p>
+                                    </strong>
+                                    <ul>
+                                        <li>Sueldo COMPETITIVO CON BASE A EXPERIENCIA</li>
+                                        <li>Seguro Social</li>
+                                        <li>Vacaciones</li>
+                                        <li>Aguinaldo</li>
+                                        <li>Crecimiento a mediano plazo</li>
+                                    </ul>
+
+                                    <p><strong>Zona de trabajo:</strong></p>
+                                    <ul>
+                                        <li>HOME OFFICE TEMPORAL COVID</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">CERRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="detEntre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">DETALLE DE ENTREVISTA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table id="usuariosT" class="table table-striped display">
+                                <thead class="thead bg-marine">
+                                    <tr>
+
+
+                                        <th scope="col" style="text-align: center;">ASISTIÓ</th>
+
+                                        <th scope="col" style="text-align: center;">INTENTOS</th>
+
+                                        <th scope="col" style="text-align: center;">ÚLTIMO MEDIO</th>
+
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+
+                                        <td style="text-align: center;">SI</td>
+
+                                        <td style="text-align: center;">5</td>
+
+                                        <td style="text-align: center;">CORREO ELECTRÓNICO</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">CERRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.s-sidebar').load('includes/sidebar.html')
+        });
+
+        $(document).ready(function () {
+            $('.n-navbar').load('includes/navbar.html')
+        });
+
+        $(document).ready(function () {
+            $('.m-responsivo').load('includes/m-responsivo.html')
+        });
+    </script>
+
+
+</body>
+
+</html>

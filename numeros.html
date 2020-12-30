@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="head"></div>
+<title>RRHH WEBAPP | DASHBOARD RRHH</title>
+
+<body>
+    <div class="m-responsivo"></div>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="container-fluid">
+            <div class="card" style="width: 18em;">
+                <div onmouseover="contador()">
+                    <div class="counter" data-target="1078600">
+                        <h1>0</h1>
+                    </div>
+                    <h3>Facebook</h3>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <div class="cerrar-sesion"></div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/dinamic.js"></script>
+    <script src="js/divs/reclutamiento.js"></script>
+    <script>
+        function contador() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 100;
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+                    if (count < target) {
+                        counter.innerText = count + inc;
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+    </script>
+</body>
+
+</html>

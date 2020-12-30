@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="head"></div>
+
+<body>
+
+
+    <div class="container-fluid">
+
+
+        <select id="select">
+            <option id="1" value="thai language">oficina</option>
+            <option id="2" value="eng language">remoto</option>
+
+        </select>
+
+        <div id="direccion1">direccion</div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/dinamic.js"></script>
+    <script src="js/divs/reclutamiento.js"></script>
+    <script>
+        $('#select').change(function () {
+            $('#direccion1').hide();
+            $('#direccion' + $(this).find('option:selected').attr('id')).show();
+        });
+    </script>
+
+</body>
+
+</html>

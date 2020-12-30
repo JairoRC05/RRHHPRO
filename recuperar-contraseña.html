@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" class="hg">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/datatables.min.css" />
+
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+  <title>RRHH S&T | Iniciar Sesión</title>
+
+</head>
+
+<body>
+
+  <div class="m-responsivo"></div>
+  <div class='wrapper wallpaper'>
+    <div class="form">
+      <div class="form__card bg-gray">
+
+        <form onSubmit={forgotPasswordHandler}>
+          <div class="form__group">
+            <img src="LogoTransparente (1).png" alt='Italian Trulli' class='form__img' width="100%" />
+          </div>
+          <div class="form-group">
+            <h5 class="form-title">Restablecimiento de contraseña</h5>
+          </div>
+
+          <div class="form__group input-group">
+            <input type='text' id='email' class="form-control" name='email' placeholder='Ingrese su correo electrónico'
+              onChange={onInputChange} />
+
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <div class="tip">
+                  <span class="tip-content">Escribe la dirección de correo electrónico que usaste para
+                    registrarte, te enviaremos un mensaje para restablecer tu contraseña.</span>
+                  <i class="fa fa-info-circle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form__group">
+            <a href="nueva-contraseña.html" class='btn btn-success text-white w-100'>Enviar<a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/dinamic.js"></script>
+  <script src="js/divs/reclutamiento.js"></script>
+
+
+</body>
+
+</html>

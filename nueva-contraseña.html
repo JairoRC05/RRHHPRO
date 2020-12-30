@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" class="hg">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/datatables.min.css" />
+
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+  <title>RRHH S&T | Iniciar Sesión</title>
+
+</head>
+
+<body>
+
+  <div class="m-responsivo"></div>
+  <div class='wrapper wallpaper'>
+    <div class="form">
+      <div class="form__card bg-gray">
+
+
+
+
+        <div class="form-group">
+          <img src="LogoTransparente (1).png" alt='Italian Trulli' class='img-fluid mt-3' width="100%" />
+        </div>
+        <div class="form-group mt-3">
+          <h5 id="ss">Restablecer Contraseña</h5>
+        </div>
+
+
+
+        <div class="form-group">
+
+          <input type="password" class="form-control text-center" id="exampleInputPassword1"
+            placeholder="Nueva Constraseña">
+          <div class="progress">
+            <div class="progress-bar ">
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="form-group mt-2">
+          <input type='password' id='verifypassword' class="form-control text-center w-100" name='verifypassword'
+            placeholder='Confirmar Nueva Contraseña' />
+        </div>
+        <div class="form-group mt-2">
+          <input type='text' id='verificationcode' class="form-control text-center w-100" name='verificationcode'
+            placeholder='Código de Verificación' onChange={onChange} />
+        </div>
+
+        <div class="form-group">
+          <a href="login.html" type='submit' class='btn btn-success w-100'>Actualizar</a>
+        </div>
+
+        </form>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/dinamic.js"></script>
+  <script src="js/divs/reclutamiento.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+
+    $(function () {
+      $.fn.bootstrapPasswordMeter = function (options) {
+        var settings = $.extend({
+          minPasswordLength: 6,
+          level0ClassName: 'progress-bar-danger',
+          level0Description: 'DÉBIL',
+          level1ClassName: 'progress-bar-dark',
+          level1Description: 'NO BUENA',
+          level2ClassName: 'progress-bar-better',
+          level2Description: 'BUENA',
+          level3ClassName: 'progress-bar-warning',
+          level3Description: 'FUERTE',
+          level4ClassName: 'progress-bar-success',
+          level4Description: 'MUY FUERTE',
+          parentContainerClass: '.form-group'
+        }, options || {});
+
+        $(this).on("keyup", function () {
+          var progressBar = $(this).closest(settings.parentContainerClass).find(
+            '.progress-bar');
+          var progressBarWidth = 0;
+          var progressBarDescription = '';
+          if ($(this).val().length >= settings.minPasswordLength) {
+            var zxcvbnObj = zxcvbn($(this).val());
+            progressBar.removeClass(settings.level0ClassName)
+              .removeClass(settings.level1ClassName)
+              .removeClass(settings.level2ClassName)
+              .removeClass(settings.level3ClassName)
+              .removeClass(settings.level4ClassName);
+            switch (zxcvbnObj.score) {
+              case 0:
+                progressBarWidth = 25;
+                progressBar.addClass(settings.level0ClassName);
+                progressBarDescription = settings.level0Description;
+                break;
+              case 1:
+                progressBarWidth = 25;
+                progressBar.addClass(settings.level1ClassName);
+                progressBarDescription = settings.level1Description;
+                break;
+              case 2:
+                progressBarWidth = 50;
+                progressBar.addClass(settings.level2ClassName);
+                progressBarDescription = settings.level2Description;
+                break;
+              case 3:
+                progressBarWidth = 75;
+                progressBar.addClass(settings.level3ClassName);
+                progressBarDescription = settings.level3Description;
+                break;
+              case 4:
+                progressBarWidth = 100;
+                progressBar.addClass(settings.level4ClassName);
+                progressBarDescription = settings.level4Description;
+                break;
+            }
+          } else {
+            progressBarWidth = 0;
+            progressBarDescription = '';
+          }
+          progressBar.css('width', progressBarWidth + '%');
+          progressBar.text(progressBarDescription);
+        });
+      };
+      $('#exampleInputPassword1').bootstrapPasswordMeter({
+        minPasswordLength: 3
+      });
+    });
+  </script>
+
+</body>
+
+</html>

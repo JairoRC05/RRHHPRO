@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="head"></div>
+<title>RRHH WEBAPP | Detalle Requerimiento</title>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="s-sidebar"></div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="n-navbar"></div>
+            <div class="container-fluid">
+                <div class="container-st">
+                    <div class="title-detalle"></div>
+                    <div class="tab-detalle"></div>
+                    <div class="tab-content">
+                        <!-- REGISTRADOS -->
+                        <div class="tab-pane fade show active" id="reg" role="tabpanel">
+                            <div class="btn-candidato"></div>
+                            <div class="tabla-registrados"></div>
+                        </div>
+                        <!-- REGISTRADOS END -->
+                        <!-- EN PROCESO -->
+                        <div class="tab-pane fade show" id="inpro" role="tabpanel">
+                            <div class="btn-imprimir"></div>
+                            <div class="tabla-proceso"></div>
+                        </div>
+                        <!-- EN PROCESO END -->
+                        <!-- DESCARTADOS -->
+                        <div class="tab-pane fade show mt-2" id="des" role="tabpanel">
+                            <div class="btn-imprimir"></div>
+                            <div class="tabla-descartados"></div>
+                        </div>
+                        <!-- DESCARTADOS END -->
+                        <!-- FINALISTAS -->
+                        <div class="tab-pane fade show mt-2" id="fin" role="tabpanel">
+                            <div class="btn-imprimir"></div>
+                            <div class="tabla-finalistas"></div>
+                        </div>
+                        <!-- FINALISTAS END -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="pubExt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                PUBLICACIÓN
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row py-3">
+                                <div class="col-xl-8">
+                                </div>
+
+                                <div class="col-xl-4 d-flex justify-content-end">
+                                    <!-- Botón Agregar Cliente -->
+
+                                    <button type="button" class="btn btn-md ml-1 bg-success text-white"
+                                        data-toggle="modal" data-target="#agregarPub" style="font-size: 15px;">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <table class="table table-hover table-striped  display" id="clientesT"
+                                style="font-size: 14px;">
+                                <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                                    <tr>
+                                        <th scope="col">PLATAFORMA</th>
+                                        <th scope="col">LIGA</th>
+                                        <th scope="col">PUBLICACIÓN</th>
+                                        <th scope="col">LÍMITE</th>
+                                        <th scope="col">POSTULADOS</th>
+                                        <th scope="col">FILTRADOS</th>
+                                        <th scope="col">EDITAR</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">OCC</th>
+                                        <td>www.occ.com.mx</td>
+                                        <td>31/MAY/2020</td>
+                                        <td>31/JUN/2020</td>
+                                        <td>20</td>
+                                        <td>5</td>
+
+                                        <td><a class="navbar-link btn btn-sm" data-toggle="modal"
+                                                data-target="#agregarPub" style="color:black;">
+                                                <i class="fas fa-edit"></i> </td>
+
+
+                                        <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                                </tbody>
+                            </table>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase bg-danger text-white"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="agregarPub" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                PUBLICACIÓN
+                                EXTERNA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <label for="exampleFormControlInput1">SELECCIONE
+                                        UNA
+                                        PLATAFORMA</label>
+                                    <select class="form-control form-control-lg w-100"
+                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">FECHA DE
+                                        PUBLICACIÓN</label>
+                                    <input type="date" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">FECHA
+                                        LÍMITE</label>
+                                    <input type="date" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">LIGA DE LA
+                                        PUBLICACIÓN</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="www.xxxxxxxxxxx.com">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">ID</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="0000000">
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase bg-danger text-white"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                DETALLES DEL
+                                CANDIDATO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">NOMBRE</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">APELLIDO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">CORREO
+                                        ELECTRÓNICO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">DIRECCIÓN</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">ESTADO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="EDO. MEX., PUEBLA...." disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">VACANTE</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="DESARROLLADOR BACKEND JAVA" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">TELÉFONO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="000 000 0000" disabled>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="detalles-candidato"></div>
+            <div class="modal fade" id="Delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                DESCARTAR
+                                CANDIDATO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body py-3">
+                            <label for="">MOTIVO</label>
+                            <input type="text" class="form-control">
+                            <small class="form-text text-muted">ESTE CANDIDATO SE
+                                MOSTRARÁ EN LA
+                                PESTAÑA DESCARTADOS</small>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-uppercase bg-danger text-white"
+                                data-dismiss="modal"><i class="fas fa-times"></i></button>
+                            <a href="#" type="button" class="btn text-uppercase bg-success text-white"><i
+                                    class="fas fa-check"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="rest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                RESTAURAR
+                                CANDIDATO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body py-3">
+
+                            <label for="">MOTIVO</label>
+                            <input type="text" class="form-control">
+                            <small class="form-text text-muted">ESTE CANDIDATO SE
+                                MOSTRARÁ EN LA
+                                PESTAÑA REGISTRADOS</small>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-uppercase bg-danger text-white"
+                                data-dismiss="modal"><i class="fas fa-times"></i></button>
+                            <a href="#" type="button" class="btn text-uppercase bg-success text-white"><i
+                                    class="fas fa-check"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nuevo-candidato"></div>
+            <div class="cv"></div>
+            <div class="nueva-entrevista"></div>
+            <div class="m-cerrar-sesion"></div>
+
+
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="js/dinamic.js"></script>
+    <script src="js/divs/reclutamiento.js"></script>
+
+
+
+</body>
+
+</html>

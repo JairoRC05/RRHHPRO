@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en" class="hg">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/datatables.min.css" />
+
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+  <title>RRHH S&T | Iniciar Sesión</title>
+
+</head>
+
+
+
+
+<body>
+
+
+
+  <div class="m-responsivo"></div>
+  <div class="wrapper wallpaper">
+    <div class="form  ">
+
+      <div class="form__card bg-gray responsivo-ms">
+
+        <div class="form__group">
+          <img src="LogoTransparente (1).png" alt='Italian Trulli' class='' width="100%" />
+        </div>
+        <div class="form-group mt-3">
+          <h2>¡Bienvenido!</h2>
+        </div>
+        <div id="bad" class="alert btn-danger" role="alert">
+          Vuelve a intentarlo... 😉
+        </div>
+        <div id="wrong" class="alert btn-warning" role="alert">
+          Datos incorectos... 🙄
+        </div>
+
+        <form name="login">
+          <div class="form__group">
+            <input type="text" id="email" class="form-control text-center my-4  w-100" name="usuario"
+              placeholder="Correo Electrónico" value="" />
+          </div>
+
+          <div class="form__group">
+            <input type="password" id="password" class="form-control text-center  my-4 w-100" name="password"
+              placeholder="Contraseña" value="" />
+          </div>
+
+
+          <div class="form__group ">
+            <input onclick="Login()" target="_parent" type="button" class='btn btn-success w-100'
+              value='Iniciar Sesión' />
+          </div>
+        </form>
+
+        <div class="form__group">
+          <a href="recuperar-contraseña.html" class="text-dark"> ¿Has olvidado tu contraseña?</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <script language="JavaScript">
+    $(document).ready(function () {
+      $("#bad").hide();
+      $("#wrong").hide();
+    })
+
+
+
+
+
+    function Login() {
+      var done = 0;
+      var usuario = document.login.usuario.value;
+      var password = document.login.password.value;
+      if (usuario == "RRHH" && password == "RRHH") {
+        window.location = "index.html";
+      }
+      if (usuario == "CANDIDATO" && password == "CANDIDATO") {
+        window.location = "examen-candidato.html";
+      }
+      if (usuario == "" && password == "") {
+        $("#bad").fadeTo(2000, 500).slideUp(500, function () {
+          $("#bad").slideUp(500);
+        });
+      } else {
+        $("#wrong").fadeTo(2000, 500).slideUp(500, function () {
+          $("#wrong").slideUp(500);
+        });
+      }
+    }
+  </script>
+
+  <script language="Javascript">
+    document.oncontextmenu = function () {
+      return false
+    }
+  </script>
+
+
+
+
+
+  <script src="js/dinamic.js"></script>
+  <script src="js/divs/reclutamiento.js"></script>
+
+
+</body>
+
+</html>

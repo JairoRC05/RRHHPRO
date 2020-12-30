@@ -1,0 +1,95 @@
+<form>
+    <div class="form-row">
+        <div class="form-group col-xl-8 d-flex justify-content-end">
+        </div>
+        <div class="form-group col-xl-4 d-flex justify-content-end">
+
+            <div class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Buscar Requerimiento">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-search"></i></button>
+                    <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#avanzado"><i
+                            class="fas fa-cogs"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+</form>
+
+
+<div class="modal fade" id="avanzado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle"><strong>Filtro Avanzado</strong>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="form-group col-xl-12">
+                        <label class="text-capitalize">Requerimiento</label>
+                        <input type="text" class="form-control-sm form-control" id="inputPassword4"
+                            placeholder="Buscar">
+                    </div>
+                    <div class="form-group col-xl-12">
+                        <label class="text-capitalize">Candidatos</label>
+                        <input type="text" class="form-control-sm form-control" id="inputPassword4"
+                            placeholder="Buscar">
+                    </div>
+                    <div class="form-group col-xl-12">
+                        <label class="text-capitalize">Responsable</label>
+                        <input type="text" class="form-control-sm form-control" id="inputPassword4"
+                            placeholder="Buscar">
+                    </div>
+                    <div class="form-group col-xl-12">
+                        <label class="text-capitalize">Fecha Entrevista</label>
+                        <div class="input-group">
+                            <input type="date" class="form-control form-control-sm" title="Selecciona Fecha Inicio">
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-xl-6">
+                        <label class="text-capitalize">Tipo</label>
+                        <div class="input-group">
+                            <select class="form-control form-control-sm"
+                                title="Busca en la pestaña Consultar por un Estatus en específico">
+                                <option value="En Proceso">Adicional</option>
+                                <option value="Registrado">Cliente</option>
+                                <option value="En Proceso">RRHH</option>
+                                <option value="En Proceso">Técnica</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <label class="text-capitalize">Revisado</label>
+                        <div class="input-group">
+                            <select class="form-control form-control-sm"
+                                title="Busca en la pestaña Consultar por un Estatus en específico">
+                                <option value="Registrado">Si</option>
+                                <option value="En Proceso">No</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+                <a type="button" class="btn btn-sm bg-primary text-white" data-dismiss="close">Buscar <i
+                        class="fas fa-search"></i></a>
+                <a type="button" class="btn btn-sm bg-danger text-white">Borrar Filtros <i class="fas fa-trash"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

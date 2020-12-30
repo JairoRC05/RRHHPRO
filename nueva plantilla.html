@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>RRHH WEBAPP | INICIO</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="css/check.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-marine-1 border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">MENÚ</div>
+      <div class="list-group list-group-flush">
+        <a href="reclutamiento.html" class="list-group-item list-group-item-action bg-marine-2">
+          <i class=" fas fa-address-book mr-2"></i>DASHBOARD RRHH</a>
+        <a href="candidatos.html" class="list-group-item list-group-item-action bg-marine-2">
+          <i class=" fas fa-users mr-2"></i>CANDIDATOS</a>
+        <a href="plantillas.html" class="list-group-item list-group-item-action bg-marine-2">
+          <i class=" fas fa-sticky-note mr-2"></i>PLANTILLAS</a>
+        <a href="vacantes.html" class="list-group-item list-group-item-action bg-marine-2">
+          <i class=" fas fa-folder-plus mr-2"></i>REQUERIMIENTOS</a>
+        <a href="examenes.html" class="list-group-item list-group-item-action bg-marine-2">
+          <i class=" fas fa-folder-plus mr-2"></i>EXÁMENES</a>
+        <a href="entrevistas.html" class="list-group-item list-group-item-action bg-marine-2">
+          <i class=" fas fa-folder-plus mr-2"></i>ENTREVISTAS</a>
+        <!-- <a href="nuevo-requisito.html" class="list-group-item list-group-item-action bg-marine-2">
+                    <i class=" fas fa-edit mr-2"></i>NUEVO REQUISITO</a> -->
+        <!-- <a href="#" class="list-group-item list-group-item-action bg-marine-2">
+                    <i class=" fas fa-graduation-cap mr-2"></i>EXÁMENES</a>
+                <a href="#" class="list-group-item list-group-item-action bg-marine-2">
+                    <i class=" fas fa-chart-bar mr-2"></i>ADMINISTRACIÓN</a>
+                <a href="#" class="list-group-item list-group-item-action bg-marine-2">
+                    <i class=" fas fa-handshake mr-2"></i>CONTRATACIÓN</a>
+                <a href="#" class="list-group-item list-group-item-action bg-marine-2">
+                    <i class=" fas fa-cogs mr-2"></i>CONFIGURACIÓN</a>
+                <a href="#" class="list-group-item list-group-item-action bg-marine-2">
+                    <i class=" fas fa-shield-alt mr-2"></i>SEGURIRDAD</a> -->
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg bg-marine border-bottom ">
+        <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+        <span class="navbar-brand mb-0 h1" id="menu-toggle">RRHH</span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" data-toggle="tooltip" data-placement="top" title="INICIO">
+                <i class=" fas fa-home mr-2"></i></a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="CANDIDATOS">
+                <i class=" fas fa-address-book mr-2 text-white"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="USUARIOS">
+                <i class=" fas fa-users mr-2"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="CONTRATACIÓN">
+                <i class=" fas fa-handshake mr-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="EXÁMENES">
+                <i class=" fas fa-graduation-cap mr-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="EMPLEADOS">
+                <i class=" fas fa-briefcase mr-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="tooltip" data-placement="top" title="ADMINISTRACIÓN">
+                <i class=" fas fa-chart-bar mr-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" data-toggle="tooltip" data-placement="top" title="CONFIGURACIÓN">
+                <i class=" fas fa-cogs mr-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" data-toggle="tooltip" data-placement="top" title="SEGURIRDAD">
+                <i class=" fas fa-shield-alt mr-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfil" class="nav-link" data-toggle="tooltip" data-placement="top"
+                title="MI PERFIL"> <i class="fas fa-user-circle"></i> USER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#logoutModal" data-toggle="modal">
+                <i class="fas fa-power-off" data-placement="top" title="CERRAR SESIÓN" data-toggle="tooltip"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid-m">
+        <div class="row">
+          <div class="col-xl-10">
+            <h1>NUEVA PLANTILLA</h1>
+          </div>
+          <div class="col-xl-2">
+            <div class="btn-group d-flex justify-content-end mt-2">
+              <button type="button" class="btn btn-success dropdown-toggle w-100" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                GUARDAR COMO
+              </button>
+              <div class="dropdown-menu w-100">
+                <!-- Dropdown menu links -->
+                <a class="dropdown-item" href="#">PLANTILLA</a>
+                <a class="dropdown-item" href="#">ENVIAR A RRHH</a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid-m">
+        <div class="row">
+          <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                aria-controls="v-pills-home" aria-selected="true">GENERAL</a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                aria-controls="v-pills-profile" aria-selected="false">REQUISITOS</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">RRHH</a>
+              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-exam" role="tab"
+                aria-controls="v-pills-settings" aria-selected="false">EXÁMENES</a>
+              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-pla" role="tab"
+                aria-controls="v-pills-settings" aria-selected="false">PLATAFORMAS</a>
+              <a class="nav-link" id="v-pills-prev-tab" data-toggle="pill" href="#v-pills-prev" role="tab"
+                aria-controls="v-pills-prev" aria-selected="false">PREVIA</a>
+
+
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab">
+                <form>
+                  <div class="container bg-gray py-3">
+                    <div class="form-group row ">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">NOMBRE DE REQUERIMIENTO*: </label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                      </div>
+
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">NOMBRE DEL PUESTO*: </label>
+                      <div class="col-sm-7">
+
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>DEV JAVA</option>
+                          <option>DEV REACT JS</option>
+                          <option>DEV ANALISTA</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">NIVEL DEL PUESTO*: </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>BECARIO</option>
+                          <option>PASANTE</option>
+                          <option>JUNIOR</option>
+                          <option>SEMI-SENIOR</option>
+                          <option>SENIOR</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">CLIENTE*: </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>XXXXX XXXXX XXXXX</option>
+                          <option>XXXXX XXXXX XXXXX</option>
+                          <option>XXXXX XXXXX XXXXX</option>
+                          <option>XXXXX XXXXX XXXXX</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">ZONA DE TRABAJO*: </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>POLANCO</option>
+                          <option>SANTA FE</option>
+                          <option>ROMA NORTE</option>
+                          <option>REFORMA</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">ESPACIO DE TRABAJO*: </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>HOME OFFICE TEMPORAL</option>
+                          <option>HOME OFFICE</option>
+                          <option>OFICINA</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">JORNADA*:
+                      </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>TIEMPO COMPLETO</option>
+                          <option>MEDIO TIEMPO</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xl-4">
+
+                          <label for="inputPassword" class="form-label">HORARIO*: </label>
+                        </div>
+                        <div class="col-xl-7">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <select class="form-control form-control-lg w-100"
+                                style="font-size: 15px; border: 1px solid #252850;">
+                                <option>LUNES</option>
+                                <option>MARTES</option>
+                                <option>MIÉRCOLES</option>
+                                <option>JUEVES</option>
+                                <option>VIERNES</option>
+                                <option>SÁBADO</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-6">
+                              <select class="form-control form-control-lg w-100"
+                                style="font-size: 15px; border: 1px solid #252850;">
+                                <option>SÁBADO</option>
+                                <option>LUNES</option>
+                                <option>MARTES</option>
+                                <option>MIÉRCOLES</option>
+                                <option>JUEVES</option>
+                                <option>VIERNES</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-2">
+                        <div class="col-xl-4">
+
+
+                        </div>
+                        <div class="col-xl-7">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <input type="time" class="form-control" id="inputPassword">
+                            </div>
+                            <div class="col-sm-6">
+                              <input type="time" class="form-control" id="inputPassword">
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">ESCOLARIDAD*: </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>SECUNDARIA</option>
+                          <option>BACHILLERATO</option>
+                          <option>TÉCNICO</option>
+                          <option>UNIVERSITARIO SIN TÍTULO</option>
+                          <option>UNIVERSITORIO CON TITULO</option>
+                          <option>POSGRADO</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">EXPERIENCIA EN AÑOS:</label>
+                      <div class="col-sm-7">
+                        <input type="number" class="form-control" id="inputPassword" min="0">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">NÚMERO DE VACANTES*:</label>
+                      <div class="col-sm-7">
+                        <input type="number" class="form-control" id="inputPassword" min="0">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container bg-gray mt-3 py-3">
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">CATEGORÍA*:
+                      </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>XXXXXXXXXXXXXXXXXXX</option>
+                          <option>XXXXXXXXXXXX</option>
+                          <option>XXXXXXXXXXX</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">SUB-CATEGORÍA*:
+                      </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>XXXXXXXXXXXXXXXXXXX</option>
+                          <option>XXXXXXXXXXXX</option>
+                          <option>XXXXXXXXXXX</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">DESCRIPCIÓN:
+                      </label>
+                      <div class="col-sm-7">
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">FECHA POSIBLE DE INGRESO:
+                      </label>
+                      <div class="col-sm-7">
+                        <input type="date" class="form-control" id="inputPassword">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">FECHA LÍMITE:
+                      </label>
+                      <div class="col-sm-7">
+                        <input type="date" class="form-control" id="inputPassword">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container bg-gray mt-3 py-3 mb-3  ">
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">DURACIÓN*: </label>
+                      <div class="col-sm-2">
+                        <input type="number" class="form-control" id="inputPassword" min="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>AÑOS</option>
+                          <option>MESES</option>
+
+
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+
+
+                      <div class="row">
+                        <div class="col-xl-4">
+
+                          <label for="inputPassword" class="form-label">SALARIO*: </label>
+                        </div>
+                        <div class="col-xl-7">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <input type="number" class="form-control" id="inputPassword" min="5000">
+                            </div>
+                            <div class="col-sm-6">
+                              <input type="number" class="form-control" id="inputPassword" min="5000">
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">GÉNERO: </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>INDISTINTO</option>
+                          <option>HOMBRE</option>
+                          <option>MUJER</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">PRIORIDAD:
+                      </label>
+                      <div class="col-sm-7">
+                        <select class="form-control form-control-lg w-100"
+                          style="font-size: 15px; border: 1px solid #252850;">
+                          <option>URGENTE</option>
+                          <option>ALTA</option>
+                          <option>MEDIA</option>
+                          <option>BAJA</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">EDAD MÍNIMA: </label>
+                      <div class="col-sm-7">
+                        <input type="number" class="form-control" id="inputPassword" min="1">
+                      </div>
+
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-4 col-form-label">EDAD MÁXIMA: </label>
+                      <div class="col-sm-7">
+                        <input type="number" class="form-control" id="inputPassword" min="1">
+                      </div>
+                    </div>
+
+
+                    <div class="custom-control custom-switch ">
+                      <input type="checkbox" class="custom-control-input " id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">ENTREVISTA CON EL CLIENTE</label>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="tab-pane fade show" id="AA" role="tabpanel">
+                  <div class="row">
+                    <div class="container-fluid mt-2">
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <ul class="nav nav-tabs nav-justified nav-pills">
+
+
+                            <li class="nav-item">
+                              <a href="#HAB" class="nav-link active " role="tab" data-toggle="tab">HABILIDADES</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#IDI" class="nav-link" role="tab" data-toggle="tab">IDIOMAS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#SKILLS" class="nav-link" role="tab" data-toggle="tab">SOFTSKILLS</a>
+                            </li>
+
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="container-fluid">
+                    <div class="tab-content">
+                      <!-- HABILIDAD -->
+                      <div class="tab-pane fade show active" id="HAB" role="tabpanel">
+                        <div class="row py-3">
+                          <div class="col-xl-8">
+                          </div>
+
+                          <div class="col-xl-4 d-flex justify-content-end">
+
+
+                            <button type="button" class="btn btn-md ml-1" data-toggle="modal" data-target="#agregarHab"
+                              style="font-size: 15px; border: 1px solid #252850">
+                              AGREGAR <i class="fas fa-"></i>
+                            </button>
+
+                          </div>
+                        </div>
+
+                        <table class="table table-hover table-striped display" id="clientesT" style="font-size: 14px;">
+                          <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                            <tr>
+                              <th scope="col">HABILIDAD</th>
+                              <th scope="col">NIVEL</th>
+                              <th scope="col" style="text-align: center;">CERTIFICADO</th>
+                              <th scope="col" style="text-align: center;">OBLIGATORIO</th>
+                              <th scope="col" style="text-align: center;">EDITAR</th>
+                              <th scope="col" style="text-align: center;">ELIMINAR</th>
+
+
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">C#</th>
+                              <td>ALTO</td>
+                              <td style="text-align: center;"><i class="fas fa-check-square"></i></td>
+                              <td style="text-align: center;"><i class="fas fa-check-square"></i></td>
+                              <td style="text-align: center;"><i class="fas fa-edit"></i></td>
+                              <td style="text-align: center;"><i class="fas fa-trash"></i></td>
+                              <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="modal fade" id="agregarHab" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
+                          role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-white bg-marine">
+                              <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">NUEVA HABILIDAD
+                              </h5>
+                              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">NOMBRE*:</label>
+
+                                <div class="row">
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                      aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-sm-1">
+                                    <button type="button" class="btn btn-success"><i class="fas fa-plus"></i></button>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">NIVEL:</label>
+                                <div class="row">
+                                  <div class="col-sm-10">
+                                    <select class="form-control form-control-lg w-100"
+                                      style="font-size: 15px; border: 1px solid #252850;">
+                                      <option>BÁSICO</option>
+                                      <option>MEDIO</option>
+                                      <option>ALTO</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-sm-1">
+
+                                    <button type="button" class="btn btn-success"><i class="fas fa-plus"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">OBLIGATORIO</label>
+                                <select class="form-control form-control-lg w-100"
+                                  style="font-size: 15px; border: 1px solid #252850;">
+                                  <option>SI</option>
+                                  <option>NO</option>
+
+
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">REQUIERE CERTIFICADO</label>
+                                <select class="form-control form-control-lg w-100"
+                                  style="font-size: 15px; border: 1px solid #252850;">
+                                  <option>SI</option>
+                                  <option>NO</option>
+
+
+                                </select>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+
+                              <button type="button" class="btn text-uppercase bg-marine"
+                                data-dismiss="modal">CERRAR</button>
+                              <button type="button" class="btn text-uppercase bg-marine"
+                                data-dismiss="modal">GUARDAR</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <!-- END  -->
+                      <!-- IDIOMA -->
+                      <div class="tab-pane fade show " id="IDI" role="tabpanel">
+                        <div class="row py-3">
+                          <div class="col-xl-8">
+                          </div>
+
+                          <div class="col-xl-4 d-flex justify-content-end">
+                            <!-- Botón Agregar Cliente -->
+
+                            <button type="button" class="btn btn-md ml-1" data-toggle="modal"
+                              data-target="#agregarIdioma" style="font-size: 15px; border: 1px solid #252850">
+                              AGREGAR <i class="fas fa-"></i>
+                            </button>
+
+                          </div>
+                        </div>
+
+                        <div class="modal fade" id="agregarIdioma" tabindex="-1" role="dialog"
+                          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
+                            role="document">
+                            <div class="modal-content">
+                              <div class="modal-header text-white bg-marine">
+                                <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">NUEVA IDIOMA
+                                </h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">NOMBRE*:</label>
+
+                                  <div class="row">
+                                    <div class="col-sm-10">
+                                      <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-sm-1">
+                                      <button type="button" class="btn btn-success"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">NIVEL:</label>
+                                  <div class="row">
+                                    <div class="col-sm-10">
+                                      <select class="form-control form-control-lg w-100"
+                                        style="font-size: 15px; border: 1px solid #252850;">
+                                        <option>BÁSICO</option>
+                                        <option>MEDIO</option>
+                                        <option>ALTO</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-sm-1">
+
+                                      <button type="button" class="btn btn-success"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">REQUIERE CERTIFICADO</label>
+                                  <select class="form-control form-control-lg w-100"
+                                    style="font-size: 15px; border: 1px solid #252850;">
+                                    <option>SI</option>
+                                    <option>NO</option>
+
+
+                                  </select>
+                                </div>
+
+                              </div>
+                              <div class="modal-footer">
+
+                                <button type="button" class="btn text-uppercase bg-marine"
+                                  data-dismiss="modal">CERRAR</button>
+                                <button type="button" class="btn text-uppercase bg-marine"
+                                  data-dismiss="modal">GUARDAR</button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+
+
+                        <table class="table table-hover table-striped  display" id="clientesT" style="font-size: 14px;">
+                          <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                            <tr>
+                              <th scope="col">IDIOMA</th>
+                              <th scope="col">NIVEL</th>
+                              <th scope="col" style="text-align: center;">CERTIFICADO</th>
+                              <th scope="col" style="text-align: center;">EDITAR</th>
+                              <th scope="col" style="text-align: center;">ELIMINAR</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">INGLÉS</th>
+                              <td>ALTO</td>
+                              <td style="text-align: center;"><i class="fas fa-check-square"></i></td>
+                              <td style="text-align: center;"><i class="fas fa-edit"></i></td>
+                              <td style="text-align: center;"><i class="fas fa-trash"></i></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="tab-pane fade show " id="SKILLS" role="tabpanel">
+                        <div class="container">
+                          <ul class="ks-cboxtags">
+
+                            <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash"><label
+                                for="checkboxOne">AUTODIDACTA</label></li>
+                            <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                                for="checkboxTwo">RESPONSABLE</label></li>
+                            <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                                for="checkboxThree">SOCIABLE</label></li>
+                            <li><input type="checkbox" id="checkboxFour" value="Rainbow Dash"><label
+                                for="checkboxFour">RESPETUOSO</label></li>
+                            <li><input type="checkbox" id="checkboxFive" value="Cotton Candy" checked><label
+                                for="checkboxFife">HONESTO</label></li>
+                            <li><a class="btn btn-success b-radius text-white" data-toggle="modal"
+                                data-target="#agregarSoft" role="button"><i class="fas fa-plus"></i></a></li>
+
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="agregarSoft" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
+                          role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-white bg-marine">
+                              <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">NUEVA SOFTKILLS
+                              </h5>
+                              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">NOMBRE*:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp">
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+
+                              <button type="button" class="btn text-uppercase bg-marine"
+                                data-dismiss="modal">CERRAR</button>
+                              <button type="button" class="btn text-uppercase bg-marine"
+                                data-dismiss="modal">GUARDAR</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade " id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                <div class="container-fluid mt-2">
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <ul class="nav nav-tabs nav-justified nav-pills">
+
+
+                        <li class="nav-item">
+                          <a href="#OFRE" class="nav-link active " role="tab" data-toggle="tab">OFRECIMIENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#CONRRHH" class="nav-link" role="tab" data-toggle="tab">CONTACTO RRHHH</a>
+                        </li>
+
+
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="tab-content">
+                    <!-- HABILIDAD -->
+                    <div class="tab-pane fade show active" id="OFRE" role="tabpanel">
+                      <div class="container-fluid">
+                        <ul class="ks-cboxtags">
+                          <h3>PRESTACIONES DE LEY</h3>
+
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">AGUINALDO</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">DÍAS
+                              DE DESCANSO</label></li>
+
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">PAGO DE UTILIDADES</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">SEGURO SOCIAL</label></li>
+
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">PRIMA VACACIONAL</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">PRIMA DOMINICAL</label></li>
+                          <li><a class="btn btn-success b-radius text-white" data-toggle="modal" data-target="#"
+                              role="button"><i class="fas fa-plus"></i></a></li>
+                        </ul>
+                      </div>
+
+                      <div class="container-fluid">
+                        <ul class="ks-cboxtags">
+                          <h3>PRESTACIONES SUPERIORES A LAS DE LA LEY</h3>
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">VALES DE DESPENSA</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">FONDO DE AHORRO</label></li>
+
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">BONOS DE PRODUCTIVIDAD</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">APOYO EN SERVCIO DE TRANSPORTE</label></li>
+
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">SERVCIO DE COMEDOR</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">SERVCIO DE ESTACIONAMIENT0</label></li>
+                          <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                              for="checkboxTwo">CAPACITACIONES</label></li>
+                          <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label
+                              for="checkboxThree">SERVCIO DE GUARDERÍA</label></li>
+                          <li><a class="btn btn-success b-radius text-white" data-toggle="modal" data-target="#"
+                              role="button"><i class="fas fa-plus"></i></a></li>
+                        </ul>
+                      </div>
+
+                      <div class="container-fluid bg-gray mt-3 py-3">
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-sm-4 col-form-label">SALARIO*:
+                          </label>
+                          <div class="col-sm-7">
+                            <select class="form-control form-control-lg w-100"
+                              style="font-size: 15px; border: 1px solid #252850;">
+                              <option>NÓMINA MENSUAL</option>
+                              <option>NÓMINA QUINCENAL</option>
+
+                            </select>
+                          </div>
+                          <div class="col-sm-1">
+                            <button type="button" class="btn btn-success"><i class="fas fa-plus"></i></button>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-sm-4 col-form-label">CONTRATACIÓN*:
+                          </label>
+                          <div class="col-sm-7">
+                            <select class="form-control form-control-lg w-100"
+                              style="font-size: 15px; border: 1px solid #252850;">
+                              <option>TIEMPO DETERMINDADO</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-1">
+                            <button type="button" class="btn btn-success"><i class="fas fa-plus"></i></button>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-sm-4 col-form-label">SALARIO MIN: </label>
+                          <div class="col-sm-7">
+                            <input type="number" class="form-control" id="inputPassword" min="1">
+                          </div>
+
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-sm-4 col-form-label">SALARIO MAX: </label>
+                          <div class="col-sm-7">
+                            <input type="number" class="form-control" id="inputPassword" min="1">
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade show " id="CONRRHH" role="tabpanel">
+                      <div class="row py-3">
+                        <div class="col-xl-8">
+                        </div>
+
+                        <div class="col-xl-4 d-flex justify-content-end">
+                          <!-- Botón Agregar Cliente -->
+
+                          <button type="button" class="btn btn-md ml-1" data-toggle="modal" data-target="#agregarRRHH"
+                            style="font-size: 15px; border: 1px solid #252850">
+                            AGREGAR <i class="fas fa-"></i>
+                          </button>
+
+                        </div>
+                      </div>
+
+
+                      <div class="modal fade" id="agregarRRHH" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
+                          role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-white bg-marine">
+                              <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">NUEVA SOFTKILLS
+                              </h5>
+                              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">NOMBRE*:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">CORREO ELECTRÓNICO*:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">TELÉFONO*:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp">
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+
+                              <button type="button" class="btn text-uppercase bg-marine"
+                                data-dismiss="modal">CERRAR</button>
+                              <button type="button" class="btn text-uppercase bg-marine"
+                                data-dismiss="modal">GUARDAR</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+                      <table class="table table-hover table-striped  display" id="clientesT" style="font-size: 14px;">
+                        <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                          <tr>
+                            <th scope="col">NOMBRE</th>
+                            <th scope="col">CORREO ELECTRÓNICO</th>
+                            <th scope="col">TELÉFONO</th>
+                            <th scope="col">EDITAR</th>
+                            <th scope="col">BORRAR</th>
+
+
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">ARACELY ROJAS</th>
+                            <td>ar@softwareandtech.com</td>
+                            <td>000 000 00000</td>
+                            <td><i class="fas fa-edit"></i></td>
+                            <td><i class="fas fa-trash"></i></td>
+
+
+
+
+
+
+
+                            <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade bg-gray py-4" id="v-pills-exam" role="tabpanel"
+                aria-labelledby="v-pills-settings-tab">
+                <div class="container p-4">
+                  <div class="card-deck-wrapper">
+                    <div class="card-deck">
+
+
+
+                      <div class="card p-4 ">
+
+                        <h4 class="card-title  text-center">JAVA</h4>
+
+                        <div class="d-flex justify-content-center">
+                          <span class="direction d-flex justify-content-center">
+                            <img src="java.png" class="mr-3" alt="...">
+                          </span>
+                        </div>
+                        <div class="custom-control custom-switch d-flex justify-content-center mt-4">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                          <label class="custom-control-label" for="customSwitch7"></label>
+                        </div>
+
+
+                      </div>
+
+
+
+                      <div class="card p-4 ">
+
+                        <h4 class="card-title  text-center">ANGULAR</h4>
+
+                        <div class="d-flex justify-content-center">
+                          <span class="direction d-flex justify-content-center">
+                            <img src="angular.png" class="mr-3" alt="...">
+                          </span>
+                        </div>
+                        <div class="custom-control custom-switch d-flex justify-content-center mt-4">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                          <label class="custom-control-label" for="customSwitch2"></label>
+                        </div>
+
+                      </div>
+
+
+                      <div class="card p-4 ">
+
+                        <h4 class="card-title  text-center">C#</h4>
+
+                        <div class="d-flex justify-content-center">
+                          <span class="direction d-flex justify-content-center">
+                            <img src="cmic.png" class="mr-3" alt="...">
+                          </span>
+                        </div>
+                        <div class="custom-control custom-switch d-flex justify-content-center mt-4">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                          <label class="custom-control-label" for="customSwitch3"></label>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+              <div class="tab-pane fade bg-gray py-4" id="v-pills-pla" role="tabpanel"
+                aria-labelledby="v-pills-settings-tab">
+                <div class="container-fluid mt-3">
+                  <div class="row py-3">
+                    <div class="col-xl-8">
+                    </div>
+
+                    <div class="col-xl-4 d-flex justify-content-end">
+                      <!-- Botón Agregar Cliente -->
+
+                      <button type="button" class="btn btn-success" data-target="#addPla" data-toggle="modal"><i class=" fas
+                        fa-plus"></i></button>
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-5 media">
+                      <img src="LogoTransparente64.png" class="mr-3" style="background: blue;" alt="...">
+                      <h5 class="mt-0 mb-1"><strong>SOTFWARE & TECH</strong></h5>
+                    </div>
+
+
+
+                    <div class="col-xl-7 d-flex justify-content-end align-items-baseline">
+                      <select class="form-control form-control-lg w-100"
+                        style="font-size: 15px; border: 1px solid #252850;">
+                        <option>NORMAL</option>
+                        <option>DESTACADO</option>
+                        <option>PREMIUM</option>
+                      </select>
+                      <button type="button" class="btn btn-info w-50 mx-2">PREVIA</button>
+                      <button type="button" class="btn btn-success w-50">PUBLICAR</button>
+
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-xl-5 media">
+                      <img src="ct.png" class="mr-3" style="background: blue;" alt="...">
+                      <h5 class="mt-0 mb-1"><strong>COMPUTRABAJO</strong></h5>
+                    </div>
+                    <div class="col-xl-7 d-flex justify-content-end align-items-baseline">
+                      <select class="form-control form-control-lg w-100"
+                        style="font-size: 15px; border: 1px solid #252850;">
+                        <option>NORMAL</option>
+                        <option>DESTACADO</option>
+                        <option>PREMIUM</option>
+                      </select>
+                      <button type="button" class="btn btn-info w-50 mx-2">PREVIA</button>
+                      <button type="button" class="btn btn-success w-50">PUBLICAR</button>
+
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-xl-5 media">
+                      <img src="OCC.png" class="mr-3" style="background: blue;" alt="...">
+                      <h5 class="mt-0 mb-1"><strong>OCC MUNDIAL</strong></h5>
+                    </div>
+                    <div class="col-xl-7 d-flex justify-content-end align-items-baseline">
+                      <select class="form-control form-control-lg w-100"
+                        style="font-size: 15px; border: 1px solid #252850;">
+                        <option>NORMAL</option>
+                        <option>DESTACADO</option>
+                        <option>PREMIUM</option>
+                      </select>
+                      <button type="button" class="btn btn-info w-50 mx-2">PREVIA</button>
+                      <button type="button" class="btn btn-success w-50">PUBLICAR</button>
+
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+
+
+
+
+                <div class="container-fluid">
+                  <div class="row py-3">
+                    <div class="col-xl-8">
+                    </div>
+
+                    <div class="col-xl-4 d-flex justify-content-end">
+                      <!-- Botón Agregar Cliente -->
+
+
+
+                      <button type="button" class="btn btn-success" data-target="#agregarPub" data-toggle="modal"><i
+                          class=" fas
+                          fa-plus"></i></button>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="container-fluid">
+
+                  <table class="table table-hover table-striped  display" id="clientesT" style="font-size: 14px;">
+                    <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                      <tr>
+                        <th scope="col">PLATAFORMA</th>
+                        <th scope="col">LIGA</th>
+                        <th scope="col">PUBLICACIÓN</th>
+                        <th scope="col">LÍMITE</th>
+                        <th scope="col">POSTULADOS</th>
+                        <th scope="col">FILTRADOS</th>
+                        <th scope="col">EDITAR</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">OCC</th>
+                        <td>www.occ.com.mx</td>
+                        <td>31/MAY/2020</td>
+                        <td>31/JUN/2020</td>
+                        <td>20</td>
+                        <td>5</td>
+
+                        <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#agregarPub"
+                            style="color:black;">
+                            <i class="fas fa-edit"></i> </td>
+
+
+                        <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                    <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                    </tbody>
+                  </table>
+
+                  </p>
+                </div>
+
+
+
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-prev" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="container bg-gray ">
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <p><strong> DESARROLLADOR .NET SENIOR</strong></p>
+
+                      <p><strong>REQUISITOS</strong></p>
+
+                      <p>Experiencia mínim:a 8 años</p>
+                      <ul>
+                        <li>.NET</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                      </ul>
+
+                      <p><strong>HABILIDADES</strong></p>
+                      <ul>
+                        <li>C#</li>
+                        <li>ASP Net</li>
+                        <li>ADO Net</li>
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>Soap</li>
+                        <li>Rest XML</li>
+                        <li>JSON</li>
+                        <li>.Net Framework</li>
+                        <li>.Net Core</li>
+                        <li>MVC</li>
+                        <li>ORACLE</li>
+                        <li>PMi</li>
+                        <li>CMMi</li>
+                        <li>ITIL</li>
+                        <li>ISO</li>
+                      </ul>
+
+                      <p><strong>CONOCIMIENTOS DESEABLES:</strong></p>
+                      <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>F#</li>
+                        <li>LinQ</li>
+                        <li>NodeJS</li>
+                        <li>Base de Datos Hadoop</li>
+                        <li>Diseño de Arquitecturas</li>
+                      </ul>
+
+                      <p><strong>IDIOMAS</strong></p>
+                      <ul>
+                        <li> Ingles Intermedio.</li>
+                      </ul>
+
+
+                      <p> <strong>SOFT SKILLS:</strong></p>
+                      <ul>
+                        <li>Analítico</li>
+                        <li>Solucionador de problemas</li>
+                        <li>Comunicación oral</li>
+                        <li>Escrita efectiva</li>
+                        <li>Autodidacta</li>
+                        <l>Capacidad para liderar equipos de trabajo.</l>
+                      </ul>
+
+                      <strong>
+                        <p>OFRECEMOS:</p>
+                      </strong>
+                      <ul>
+                        <li>Sueldo COMPETITIVO CON BASE A EXPERIENCIA</li>
+                        <li>Seguro Social</li>
+                        <li>Vacaciones</li>
+                        <li>Aguinaldo</li>
+                        <li>Crecimiento a mediano plazo</li>
+                      </ul>
+
+                      <p><strong>Zona de trabajo:</strong></p>
+                      <ul>
+                        <li>HOME OFFICE TEMPORAL COVID</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="modal fade" id="pubExt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">PUBLICACIÓN
+                  </h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row py-3">
+                    <div class="col-xl-8">
+                    </div>
+
+                    <div class="col-xl-4 d-flex justify-content-end">
+                      <!-- Botón Agregar Cliente -->
+
+                      <button type="button" class="btn btn-md ml-1" data-toggle="modal" data-target="#agregarPub"
+                        style="font-size: 15px; border: 1px solid #252850">
+                        AGREGAR <i class="fas fa-"></i>
+                      </button>
+
+                    </div>
+                  </div>
+
+
+
+
+                  <table class="table table-hover table-striped  display" id="clientesT" style="font-size: 14px;">
+                    <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                      <tr>
+                        <th scope="col">PLATAFORMA</th>
+                        <th scope="col">LIGA</th>
+                        <th scope="col">PUBLICACIÓN</th>
+                        <th scope="col">LÍMITE</th>
+                        <th scope="col">POSTULADOS</th>
+                        <th scope="col">FILTRADOS</th>
+                        <th scope="col">EDITAR</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">OCC</th>
+                        <td>www.occ.com.mx</td>
+                        <td>31/MAY/2020</td>
+                        <td>31/JUN/2020</td>
+                        <td>20</td>
+                        <td>5</td>
+
+                        <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#agregarPub"
+                            style="color:black;">
+                            <i class="fas fa-edit"></i> </td>
+
+
+                        <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                    </tbody>
+                  </table>
+
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal fade" id="agregarPub" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered " role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">PUBLICACIÓN EXTERNA
+                  </h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+
+                    <div class="col-12">
+                      <label for="exampleFormControlInput1">SELECCIONE UNA PLATAFORMA</label>
+                      <select class="form-control form-control-lg w-100"
+                        style="font-size: 15px; border: 1px solid #252850;">
+
+                        <option>XXXXXXXXXX XXXXXX</option>
+                        <option>XXXXXXXXXX XXXXXX</option>
+                        <option>XXXXXXXXXX XXXXXX</option>
+                        <option>XXXXXXXXXX XXXXXX</option>
+                        <option>XXXXXXXXXX XXXXXX</option>
+                        <option>XXXXXXXXXX XXXXXX</option>
+                      </select>
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">FECHA DE PUBLICACIÓN</label>
+                      <input type="date" class="form-control w-100" id="inputPassword" placeholder="XXXXXXXX">
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">FECHA LÍMITE</label>
+                      <input type="date" class="form-control w-100" id="inputPassword" placeholder="XXXXXXXX">
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">LIGA DE LA PUBLICACIÓN</label>
+                      <input type="text" class="form-control w-100" id="inputPassword"
+                        placeholder="www.xxxxxxxxxxx.com">
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">ID</label>
+                      <input type="text" class="form-control w-100" id="inputPassword" placeholder="0000000">
+                    </div>
+
+
+
+
+
+                  </div>
+
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="modal fade" id="AUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">AGREGAR/EDITAR/DETALLES
+                    CANDIDATO
+                  </h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">NOMBRE</label>
+                      <input type="text" class="form-control w-100" id="inputPassword" placeholder="XXXXXXXX" disabled>
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">APELLIDO</label>
+                      <input type="text" class="form-control w-100" id="inputPassword" placeholder="XXXXXXXX" disabled>
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">CORREO ELECTRÓNICO</label>
+                      <input type="text" class="form-control w-100" id="inputPassword" placeholder="XXXXXXXX" disabled>
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">DIRECCIÓN</label>
+                      <input type="text" class="form-control w-100" id="inputPassword" placeholder="XXXXXXXX" disabled>
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">ESTADO</label>
+                      <input type="text" class="form-control w-100" id="inputPassword"
+                        placeholder="EDO. MEX., PUEBLA...." disabled>
+                    </div>
+                    <div class="col-12 mt-1">
+                      <label for="exampleFormControlInput1">VACANTE</label>
+                      <input type="text" class="form-control w-100" id="inputPassword"
+                        placeholder="DESARROLLADOR BACKEND JAVA" disabled>
+                    </div>
+
+
+
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="row">
+        <div class="col-3">VACANTE</div>
+        <div class="col-2">CREACIÓN</div>
+        <div class="col-2">LÍMITE</div>
+        <div class="col-1">INSCRITOS</div>
+        <div class="col-2">EN PROCES0</div>
+        <div class="col-1">DESCARTADOS</div>
+        <div class="col-1">FINALISTAS</div>
+      </div>
+      <div class="row">
+        <div class="col-3 bg-primary">VACANTE</div>
+        <div class="col-2 bg-primary">01/00/2020</div>
+        <div class="col-2 bg-primary">01/00/2020</div>
+        <div class="col-1 bg-primary">12</div>
+        <div class="col-2 bg-primary">12</div>
+        <div class="col-1 bg-primary">12</div>
+        <div class="col-1 bg-primary">12</div>
+      </div>
+    </div>  -->
+
+
+
+          <!--Modal Cerrar Sesión-->
+          <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">XXXXXXXXXXXX</h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center py-5">
+                  <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">NOMBRE</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn bg-marine" data-dismiss="modal">CANCELAR</button>
+                  <a class="btn bg-marine" href="login.html" role="button">GUARDAR</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="addPla" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">XXXXXXXXXXXX</h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">NOMBRE</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">SUBIR IMÁGEN</span>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                      <small id="emailHelp" class="form-text text-muted">La imágen tiene que ser de 64px x 64px</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn bg-marine" data-dismiss="modal">CANCELAR</button>
+                  <a class="btn bg-marine" href="login.html" role="button">GUARDAR</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">Cerrar sesión</h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center py-5">
+                  <h4 class="text-uppercase">
+                    ¿seguro de cerrar sesión?
+                  </h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn bg-marine" data-dismiss="modal">No</button>
+                  <a class="btn bg-marine" href="login.html" role="button">Si</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- PREVIEW -->
+          <div class="modal fade" id="Preview" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-white bg-marine">
+                  <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">DESARROLLADOR
+                    .NET SENIOR
+                  </h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row py-3">
+                    <div class="col-xl-12">
+                      <p><strong>DESARROLLADOR .NET SENIOR</strong></p>
+
+                      <P> Únete al Gran Equipo de Trabajo Software & Tech, Empresa internacional Experta
+                        en consultoría de Desarrollo y Administración de Sistemas, Software y
+                        Aplicaciones; con una trayectoria exitosa de más de 20 años.</P>
+
+                      <p>
+                        <strong> ¿QUÉ NECESITAS PARA QUEDARTE CON EL PUESTO?</strong>
+                      </p>
+
+                      <p>
+                        <strong> REQUISITOS</strong>
+                      </p>
+
+                      <ul>
+                        <li>
+                          Experiencia mínima de 8 años en DESARROLLO DE APLICACIONES NET</li>
+
+                        <li> Sólidos conocimientos en JavaScript, HTML5, CSS y Bootstrap</li>
+
+                        <li>
+                          SOFT SKILLS: Analítico y solucionador de problemas, comunicación oral y
+                          escrita efectiva, Autodidacta, Capacidad para liderar equipos de trabajo.
+                        </li>
+                      </ul>
+
+                      <p><strong> HABILIDADES</strong></p>
+
+                      <ul>
+                        <li> Desarrollo en C#, ASP Net, ADO Net</li>
+
+                        <li> Desarrollo en Javascript, JQuery</li>
+
+                        <li>Desarrollo Servicios WEB: Soap y Rest XML, JSON</li>
+
+                        <li> .Net Framework</li>
+
+                        <li> .Net Core</li>
+
+                        <li> MVC</li>
+
+                        <li> ORACLE (Modelado, triggers, SP, vistas, tablas)</li>
+
+                        <li> Manejo de grandes volúmenes de datos</li>
+
+                        <li> Conocimientos lineamientos PMi, CMMi, Estándares ITIL e ISO.</li>
+
+                        <li> Ingles Intermedio.</li>
+
+                        <li> Sector Financiero (preferentemente)</li>
+
+                        <li>Liderar y Gestionar Proyectos</li>
+
+                        <li> Microsoft Office – MS Project</li>
+
+
+                      </ul>
+
+
+                      <p> <strong>CONOCIMIENTOS DESEABLES:</strong></p>
+                      <ul>
+
+                        <li> HTML5 / CSS</li>
+
+                        <li> F#</li>
+
+                        <li>LinQ</li>
+
+                        <li>NodeJS</li>
+
+                        <li>Base de Datos Hadoop</li>
+
+
+                        <li> Diseño de Arquitecturas</li>
+
+                      </ul>
+                      <p><strong> OFRECEMOS</strong></p>
+
+                      <ul>
+                        <li> Sueldo COMPETITIVO CON BASE A EXPERIENCIA</li>
+
+                        <li> Seguro Social</li>
+
+                        <li> Vacaciones</li>
+
+                        <li> Aguinaldo</li>
+
+                        <li> Crecimiento a mediano plazo</li>
+
+                        <li> Zona de trabajo: HOME OFFICE TEMPORAL COVID</li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+
+                  <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">CERRAR</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+      </div>
+      <!-- /#wrapper -->
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="js/jquery/jquery.min.js"></script>
+      <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+      <!-- Menu Toggle Script -->
+      <script>
+        $("#menu-toggle").click(function (e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+      <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+
+</body>
+
+</html>

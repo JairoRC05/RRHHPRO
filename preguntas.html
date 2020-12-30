@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>RRHH WEBAPP | Preguntas</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid bg-dark">
+        <div class="responsivo-msg">
+            <img src="LogoTransparente (1).png" alt="Italian Trulli" class="img-fluid mt-3 bg-dark">
+        </div>
+    </div>
+
+
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="s-sidebar"></div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+
+
+            <div class="n-navbar"></div>
+
+            <div class="container-fluid">
+
+                <div class="container-st">
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <h5>
+                                <strong>Preguntas de Entrevista: Fernando Montaño, Analistas WEB</strong>
+                            </h5>
+                        </div>
+
+                        <div class="col-xl-3 d-flex justify-content-end">
+                            <div class="row">
+
+                                <div class="col p-0">
+                                    <button type="button" data-toggle="modal" data-target="#nAsk" title="Nueva Pregunta"
+                                        class="btn btn-success btn-sm cursor"><i
+                                            class="fas fa-plus cursor"></i></button>
+                                </div>
+                                <div class="col px-1">
+                                    <button type="button" data-toggle="modal" data-target="#CV" title="CV"
+                                        class="btn btn-info btn-sm"><i class="fas fa-file cursor"></i></button>
+                                </div>
+
+
+                                <div class="col pl-0">
+                                    <a href="entrevistas.html" type="button" title="Salir"
+                                        class="btn btn-primary btn-sm text-white cursor"><i
+                                            class="fas fa-arrow-right cursor"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-st">
+                    <div class="row">
+                        <div class="col-xl-10">
+                            <h4>1.- ¿Cómo te ves en 10 años?</h4>
+
+                        </div>
+
+                        <div class="col-xl-2 d-flex justify-content-end align-items-baseline">
+                            <button class="btn btn-sm btn-success text-white mx-1" data-toggle="modal"
+                                title="Editar Pregunta" data-target="#eAsk">
+                                <i class="fas fa-pen"></i></button>
+                            <button class="btn btn-sm btn-danger text-white" data-toggle="modal"
+                                data-target="#eliminarPregunta" title="Eliminar Pregunta">
+                                <i class="fas fa-trash cursor"></i></button>
+                        </div>
+
+                        <div class="col-xl-12">
+
+                            <label class="text-normal">Respuesta:</label>
+
+                            <textarea class="form-control" aria-label="With textarea" disabled></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="nAsk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Nueva Pregunta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="exampleFormControlInput1">Escriba la pregunta</label>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm text-uppercase bg-danger text-white"
+                            data-dismiss="modal"><i class="fas fa-times"></i></button>
+                        <button type="button" class="btn  btn-sm text-uppercase bg-success text-white"><i
+                                class="fas fa-save"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="eAsk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Editar Pregunta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="text-normal">Pregunta:</label>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="text-normal">Respuesta:</label>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-uppercase bg-danger text-white" data-dismiss="modal"><i
+                                class="fas fa-times"></i></button>
+                        <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                class="fas fa-save"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="CV" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                            CV CANDIDATO
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="container">
+                            <img src="https://www.micandidatura.com/wp-content/uploads/2019/01/plantilla-curriculum-vitae-cv-nueva-york-9-1052x1489.jpg"
+                                class="card-img-top" alt="...">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="modal fade" id="eliminarPregunta" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Eliminar Pregunta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h5>
+                            ¿Seguro de eliminar esta pregunta?
+                        </h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm text-uppercase bg-danger text-white"
+                            data-dismiss="modal"><i class="fas fa-times"></i></button>
+                        <button type="button" class="btn btn-sm text-uppercase bg-success text-white"><i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- /#page-content-wrapper -->
+
+
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.s-sidebar').load('includes/sidebar.html')
+        });
+
+        $(document).ready(function () {
+            $('.n-navbar').load('includes/navbar.html')
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>RRHH WEBAPP | INICIO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+
+<body>
+    <div class="m-responsivo"></div>
+
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="s-sidebar"></div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <div class="n-navbar"></div>
+
+
+
+            <div class="container-fluid my-3">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h5><strong>EXÁMENES</strong></h5>
+                    </div>
+                    <div class="col-xl-6 d-flex justify-content-end">
+                        <a type="button" class="btn btn-sm bg-success text-white" style="margin-right: 5px;"
+                            data-target="#AddEx" data-toggle="modal">
+                            <i class=" fas fa-plus" data-placement="top" title="NUEVA ENTREVISTA"
+                                data-toggle=" tooltip"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid">
+                <table id="usuariosT" class="table table-hover display">
+                    <thead class="thead">
+                        <tr>
+                            <th scope="col" style="text-align: left;">CANDIDATO</th>
+                            <th scope="col" style="text-align: center;">EXAMEN</th>
+                            <th scope="col" style="text-align: center;">FECHA</th>
+                            <th scope="col" style="text-align: center;">RESPONSABLE</th>
+                            <th scope="col" style="text-align: center;">CALIFICACIÓN</th>
+                            <th scope="col" style="text-align: center;">CALIFICAR</th>
+                            <th scope="col" style="text-align: center;">DETALLES</th>
+                            <th scope="col" style="text-align: center;">EDITAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td style="text-align: center;">FERNANDO FERNÁNDEZ</td>
+                            <td style="text-align: center;">MY SQL</td>
+                            <td style="text-align: center;">00/00/0000</td>
+                            <td style="text-align: center;">ARACELY ROJAS</td>
+                            <td style="text-align: center;">9.8</td>
+                            <td style="text-align: center;"><a class="navbar-link btn btn-sm" href="calificar.html"
+                                    style="color:black;">
+                                    <i class="fas fa-signature"></i> </a></td>
+                            <td style="text-align: center;"><a class="navbar-link btn btn-sm" data-toggle="modal"
+                                    data-target="#detExamen" style="color:black;">
+                                    <i class="fas fa-eye"></i> </a></td>
+                            <td style="text-align: center;"><a class="navbar-link btn btn-sm" data-toggle="modal"
+                                    data-target="#EEx" style="color:black;">
+                                    <i class="fas fa-edit"></i> </a></td>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal fade" id="detExamen" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">DETALLLES DEL EXAMEN
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <table id="usuariosT" class="table table-striped display">
+                                    <thead class="thead bg-marine">
+                                        <tr>
+
+                                            <th scope="col" style="text-align: center;">REMOTO</th>
+                                            <th scope="col" style="text-align: center;">INTENTOS</th>
+                                            <th scope="col" style="text-align: center;">CONFIRMA POR</th>
+                                            <th scope="col" style="text-align: center;">APROBÓ</th>
+                                            <th scope="col" style="text-align: center;">REVISADO</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: center;">SI</td>
+                                            <td style="text-align: center;">5</td>
+                                            <td style="text-align: center;">CORREO ELECTRÓNICO</td>
+                                            <td style="text-align: center;">SI</td>
+                                            <td style="text-align: center;">SI</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="modal fade" id="AddEx" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">AGREGAR EXAMEN
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+                                            <li class="nav-item">
+                                                <a href="#eReg2" class="nav-link active " role="tab"
+                                                    data-toggle="tab">REGISTRO</a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a href="#Res2" class="nav-link" role="tab"
+                                                    data-toggle="tab">RESPONSABLES</a>
+                                            </li> -->
+                                            <!-- <li class="nav-item">
+                                                 <a href="#cal2" class="nav-link" role="tab"
+                                                     data-toggle="tab">CALIFICAR</a>
+                                             </li>
+                                             <li class="nav-item">
+                                                 <a href="#hisInt2" class="nav-link" role="tab"
+                                                     data-toggle="tab">HISTORIAL DE
+                                                     INTENTOS</a>
+                                             </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <div class="tab-pane fade show active" id="eReg2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EXAMEN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>PSICOMÉTRICO</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">RESPONSABLE</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">FECHA DEL EXAMEN</label>
+                                                    <input type="date" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">DURACIÓN (HORAS)</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MEDIO DE COMUNICACIÓN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input type="checkbox"
+                                                                    aria-label="Checkbox for following text input">
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            aria-label="Text input with checkbox" disabled
+                                                            placeholder="REMOTO">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">DIRECCIÓN DE LA ENTREVISTA</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="Res2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <div class="row py-3">
+
+                                                <div class="col-xl-12 d-flex justify-content-end p-0">
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CARLOS SANDOVAL</option>
+                                                        <option>RAFAEL SERVIN</option>
+                                                    </select>
+
+                                                    <a type="button" class="btn btn-md  bg-success text-white"
+                                                        data-toggle="modal" data-target="#" style="font-size: 15px;"><i
+                                                            class="fas fa-plus"></i></a>
+
+                                                    </a>
+                                                    <a type="button" class="btn btn-md  bg-danger text-white"
+                                                        data-toggle="modal" data-target="#" style="font-size: 15px;"><i
+                                                            class="fas fa-trash"></i></a>
+
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="cal2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EXAMEN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>PSICOMÉTRICO</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">FECHA DEL EXAMEN</label>
+                                                    <input type="date" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">HORA</label>
+                                                    <input type="time" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">DURACIÓN (HORAS)</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MEDIO DE COMUNICACIÓN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">OBSERVACIONES</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="hisInt2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <table class="table table-hover table-striped  display" id="clientesT"
+                                                style="font-size: 14px;">
+                                                <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                                                    <tr>
+                                                        <th scope="col">EXAMEN</th>
+                                                        <th scope="col" style="text-align: center;">FECHA DE LA
+                                                            ENTREVISTA</th>
+                                                        <th scope="col" style="text-align: center;">HORA</th>
+                                                        <th scope="col" style="text-align: center;">MOTIVO DE LA
+                                                            REAGENDAR</th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PSICOMÉTRICO</td>
+                                                        <td align="center">00/00/0000</td>
+                                                        <td align="center">12:23</td>
+                                                        <td align="center">NO LLEGO</td>
+                                                    </tr>
+
+
+
+                                                    <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="EEx" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">EDITAR EXAMEN
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+                                            <li class="nav-item">
+                                                <a href="#eReg2" class="nav-link active " role="tab"
+                                                    data-toggle="tab">REGISTRO</a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a href="#Res2" class="nav-link" role="tab"
+                                                    data-toggle="tab">RESPONSABLES</a>
+                                            </li> -->
+                                            <!-- <li class="nav-item">
+                                                 <a href="#cal2" class="nav-link" role="tab"
+                                                     data-toggle="tab">CALIFICAR</a>
+                                             </li>
+                                             <li class="nav-item">
+                                                 <a href="#hisInt2" class="nav-link" role="tab"
+                                                     data-toggle="tab">HISTORIAL DE
+                                                     INTENTOS</a>
+                                             </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <div class="tab-pane fade show active" id="eReg2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EXAMEN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>PSICOMÉTRICO</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">RESPONSABLE</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">FECHA DEL EXAMEN</label>
+                                                    <input type="date" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">DURACIÓN (HORAS)</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MEDIO DE COMUNICACIÓN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input type="checkbox"
+                                                                    aria-label="Checkbox for following text input">
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            aria-label="Text input with checkbox" disabled
+                                                            placeholder="REMOTO">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">DIRECCIÓN DE LA ENTREVISTA</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EN CASO DE REAGENDAR</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input type="checkbox"
+                                                                    aria-label="Checkbox for following text input">
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            aria-label="Text input with checkbox" disabled
+                                                            placeholder="REAGENDAR">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MOTIVO DE REAGENDA*</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="Res2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <div class="row py-3">
+
+                                                <div class="col-xl-12 d-flex justify-content-end p-0">
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CARLOS SANDOVAL</option>
+                                                        <option>RAFAEL SERVIN</option>
+                                                    </select>
+
+                                                    <a type="button" class="btn btn-md  bg-success text-white"
+                                                        data-toggle="modal" data-target="#" style="font-size: 15px;"><i
+                                                            class="fas fa-plus"></i></a>
+
+                                                    </a>
+                                                    <a type="button" class="btn btn-md  bg-danger text-white"
+                                                        data-toggle="modal" data-target="#" style="font-size: 15px;"><i
+                                                            class="fas fa-trash"></i></a>
+
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="cal2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EXAMEN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>PSICOMÉTRICO</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">FECHA DEL EXAMEN</label>
+                                                    <input type="date" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">HORA</label>
+                                                    <input type="time" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">DURACIÓN (HORAS)</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MEDIO DE COMUNICACIÓN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">OBSERVACIONES</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="hisInt2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <table class="table table-hover table-striped  display" id="clientesT"
+                                                style="font-size: 14px;">
+                                                <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                                                    <tr>
+                                                        <th scope="col">EXAMEN</th>
+                                                        <th scope="col" style="text-align: center;">FECHA DE LA
+                                                            ENTREVISTA</th>
+                                                        <th scope="col" style="text-align: center;">HORA</th>
+                                                        <th scope="col" style="text-align: center;">MOTIVO DE LA
+                                                            REAGENDAR</th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PSICOMÉTRICO</td>
+                                                        <td align="center">00/00/0000</td>
+                                                        <td align="center">12:23</td>
+                                                        <td align="center">NO LLEGO</td>
+                                                    </tr>
+
+
+
+                                                    <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="editEx" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">CALIFICAR EXAMEN
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+
+                                            <li class="nav-item">
+                                                <a href="#calificacion" class="nav-link active" role="tab"
+                                                    data-toggle="tab">DETALLE</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#calificar" class="nav-link" role="tab"
+                                                    data-toggle="tab">CALIFICAR</a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a href="#cal3" class="nav-link" role="tab"
+                                                    data-toggle="tab">CALIFICACIONES</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#hisIntentos" class="nav-link" role="tab"
+                                                    data-toggle="tab">HISTORIAL DE
+                                                    INTENTOS</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show active" id="calificacion" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">CANDIDATO</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">EXAMEN</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">FECHA DE EXAMEN</label>
+                                                            <input type="time" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">HORA</label>
+                                                            <input type="time" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">DURACIÓN</label>
+                                                            <input type="number" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <!-- <div class="form-group">
+                                                            <label for="exampleInputPassword1">MEDIO DE
+                                                                COMUNICACIÓN</label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div> -->
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">OBSERVACIONES</label>
+                                                            <textarea class="form-control"
+                                                                aria-label="With textarea"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show" id="calificar" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1"
+                                                                class="bg-success text-white p-2">CALIFICACIÓN:
+                                                                <strong>10</strong></label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">¿Qué es una clase?</label>
+
+                                                            <p>Cada clase es un modelo que define un conjunto de
+                                                                variables -el estado, y métodos apropiados para operar
+                                                                con dichos datos -el comportamiento</p>
+
+
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="exampleRadios" id="exampleRadios1"
+                                                                    value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    CORRECTO
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="exampleRadios" id="exampleRadios2"
+                                                                    value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                    INCORRECTO
+                                                                </label>
+                                                            </div>
+                                                            <small id="emailHelp" class="form-text text-muted">PUNTUAJE
+                                                                MAX. <strong>2</strong>ptos</small>
+
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">¿Qué es una
+                                                                clase?</label>
+
+                                                            <p>Cada clase es un modelo que define un conjunto de
+                                                                variables -el estado, y métodos apropiados para
+                                                                operar
+                                                                con dichos datos -el comportamiento</p>
+
+
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="exampleRadios" id="exampleRadios1"
+                                                                    value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    CORRECTO
+                                                                </label>
+                                                            </div>
+                                                            <!-- <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="exampleRadios" id="exampleRadios2"
+                                                                    value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                    INCORRECTO
+                                                                </label>
+                                                            </div> -->
+
+                                                            <small id="emailHelp" class="form-text text-muted">PUNTUAJE
+                                                                MAX. <strong>2</strong>ptos</small>
+
+                                                        </div>
+                                                        <div class="col-xl-12 d-flex justify-content-end">
+                                                            <nav aria-label="Page navigation example">
+                                                                <ul class="pagination">
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#"
+                                                                            aria-label="Previous">
+                                                                            <span aria-hidden="true">&laquo;</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#">1</a>
+                                                                    </li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#">2</a>
+                                                                    </li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#">3</a>
+                                                                    </li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#" aria-label="Next">
+                                                                            <span aria-hidden="true">&raquo;</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="cal3" role="tabpanel">
+
+                                        <table class="table table-hover table-striped  display" id="clientesT"
+                                            style="font-size: 14px;">
+                                            <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                                                <tr>
+                                                    <th scope="col">EXAMEN</th>
+                                                    <th scope="col" style="text-align: center;">FECHA DE EXAMEN</th>
+                                                    <th scope="col" style="text-align: center;">HORA</th>
+                                                    <th scope="col" style="text-align: center;">MOTIVO REAGENDA</th>
+                                                    <th scope="col" style="text-align: center;">CALIFICA</th>
+                                                    <th scope="col" style="text-align: center;">OBSERVACIONES</th>
+                                                    <th scope="col" style="text-align: center;">CALIFICACIÓN</th>
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>PSICOMÉTRICO</td>
+                                                    <td align="center">00/00/0000</td>
+                                                    <td align="center">12:23</td>
+                                                    <td align="center">NO LLEGO</td>
+                                                    <td align="center">RAFAEL SERVIN</td>
+                                                    <td align="center">NO APTO</td>
+                                                    <td align="center">9</td>
+                                                </tr>
+
+
+
+                                                <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="hisIntentos" role="tabpanel">
+
+                                        <table class="table table-hover table-striped  display" id="clientesT"
+                                            style="font-size: 14px;">
+                                            <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                                                <tr>
+                                                    <th scope="col">EXAMEN</th>
+                                                    <th scope="col" style="text-align: center;">FECHA DE EXAMEN</th>
+                                                    <th scope="col" style="text-align: center;">HORA</th>
+                                                    <th scope="col" style="text-align: center;">MOTIVO REAGENDA</th>
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>PSICOMÉTRICO</td>
+                                                    <td align="center">00/00/0000</td>
+                                                    <td align="center">12:23</td>
+                                                    <td align="center">NO LLEGO</td>
+                                                </tr>
+
+
+
+                                                <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    <!-- END  -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="modal fade" id="AddEntre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
+                                AGREGAR ENTREVISTA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+                                            <li class="nav-item">
+                                                <a href="#eRegEntre" class="nav-link active " role="tab"
+                                                    data-toggle="tab">REGISTRO</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <div class="tab-pane fade show active" id="eRegEnte" role="tabpanel">
+                                        <div class="container-fluid bg-gray py-3">
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">ENTREVISTA*:
+                                                </label>
+                                                <div class="col-sm-12">
+
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword"
+                                                    class="col-sm-12 col-form-label">RESPONSABLE*:
+                                                </label>
+                                                <div class="col-sm-12">
+
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <label for="inputPassword" class="form-label">FECHA Y
+                                                            HORA*:
+                                                        </label>
+
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <input type="date" class="form-control"
+                                                                    id="inputPassword">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <input type="time" class="form-control"
+                                                                    id="inputPassword">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">MEDIO DE
+                                                    COMUNICACIÓN*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE QUE SEA CON EL CLIENTE</small>
+
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">CLIENTE*:
+                                                </label>
+
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+                                                        <option>XXXXX XXXXX XXXXX</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">CONTACTO*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">ZONA*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+                                                        <option>POLANCO</option>
+                                                        <option>SANTA FE</option>
+                                                        <option>ROMA NORTE</option>
+                                                        <option>REFORMA</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE REGISTRAR LA
+                                                    UBICACIÓN</small>
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">DIRECCIÓN
+                                                    DE
+                                                    LA ENTREVISTA*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <small id="emailHelp" class="form-text text-muted col-sm-12">EN
+                                                    CASO
+                                                    DE REAGENDAR</small>
+                                                <label for="inputPassword" class="col-sm-12 col-form-label">MOTIVO*:
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-lg w-100"
+                                                        style="font-size: 15px; border: 1px solid #252850;">
+
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-1">
+
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Modal Plantillas -->
+            <div class="modal fade" id="newReq" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">NUEVO REQUERIMIENTO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <a href="nuevo-requisito copy.html" type="button" class="btn btn-light w-100">EN
+                                            BLANCO</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-4">
+                                <strong>
+                                    <p>PLANTILLAS: </p>
+                                </strong>
+
+                                <div class="col-12 mt-1">
+                                    <button type="button" class="btn bg-marine w-100">DEV. KOTLIN JR.</button>
+                                </div>
+
+                                <div class="col-12 mt-1">
+                                    <button type="button" class="btn bg-marine w-100">DEV. FRONTEND
+                                        REACT</button>
+                                </div>
+
+                                <div class="col-12 mt-1">
+                                    <button type="button" class="btn bg-marine w-100">DEV. BACKEND
+                                        JAVA</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End -->
+
+            <div class="modal fade" id="agregarPub" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">PUBLICACIÓN EXTERNA
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <label for="exampleFormControlInput1">SELECCIONE UNA PLATAFORMA</label>
+                                    <select class="form-control form-control-lg w-100"
+                                        style="font-size: 15px; border: 1px solid #252850;">
+
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                        <option>XXXXXXXXXX XXXXXX</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">FECHA DE PUBLICACIÓN</label>
+                                    <input type="date" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">FECHA LÍMITE</label>
+                                    <input type="date" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">LIGA DE LA PUBLICACIÓN</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="www.xxxxxxxxxxx.com">
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">ID</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="0000000">
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="modal fade" id="React" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">REACTIVAR / BAJA</h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">MOTIVO:
+                            </label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control w-100" id="inputPassword">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="AUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">AGREGAR/EDITAR/DETALLES
+                                CANDIDATO
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">NOMBRE</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">APELLIDO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">CORREO ELECTRÓNICO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">DIRECCIÓN</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="XXXXXXXX" disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">ESTADO</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="EDO. MEX., PUEBLA...." disabled>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <label for="exampleFormControlInput1">VACANTE</label>
+                                    <input type="text" class="form-control w-100" id="inputPassword"
+                                        placeholder="DESARROLLADOR BACKEND JAVA" disabled>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn text-uppercase mg-r"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn text-uppercase mg-r">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="row">
+        <div class="col-3">VACANTE</div>
+        <div class="col-2">CREACIÓN</div>
+        <div class="col-2">LÍMITE</div>
+        <div class="col-1">INSCRITOS</div>
+        <div class="col-2">EN PROCES0</div>
+        <div class="col-1">DESCARTADOS</div>
+        <div class="col-1">FINALISTAS</div>
+      </div>
+      <div class="row">
+        <div class="col-3 bg-primary">VACANTE</div>
+        <div class="col-2 bg-primary">01/00/2020</div>
+        <div class="col-2 bg-primary">01/00/2020</div>
+        <div class="col-1 bg-primary">12</div>
+        <div class="col-2 bg-primary">12</div>
+        <div class="col-1 bg-primary">12</div>
+        <div class="col-1 bg-primary">12</div>
+      </div>
+    </div>  -->
+
+            <div class="modal fade" id="editEx" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">EDITAR EXAMEN
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid mt-2">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <ul class="nav nav-tabs nav-justified nav-pills">
+                                            <li class="nav-item">
+                                                <a href="#eReg2" class="nav-link active " role="tab"
+                                                    data-toggle="tab">REGISTRO</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#Res2" class="nav-link" role="tab"
+                                                    data-toggle="tab">RESPONSABLES</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#cal2" class="nav-link" role="tab"
+                                                    data-toggle="tab">CALIFICAR</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#hisInt2" class="nav-link" role="tab"
+                                                    data-toggle="tab">HISTORIAL DE
+                                                    INTENTOS</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container-fluid">
+                                <div class="tab-content">
+                                    <!--  REGISTRO-->
+                                    <div class="tab-pane fade show active" id="eReg2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EXAMEN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>PSICOMÉTRICO</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">FECHA DEL EXAMEN</label>
+                                                    <input type="date" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">DURACIÓN (HORAS)</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MEDIO DE COMUNICACIÓN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input type="checkbox"
+                                                                    aria-label="Checkbox for following text input">
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            aria-label="Text input with checkbox" disabled
+                                                            placeholder="REMOTO">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">DIRECCIÓN DE LA ENTREVISTA</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EN CASO DE REAGENDAR</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input type="checkbox"
+                                                                    aria-label="Checkbox for following text input">
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control"
+                                                            aria-label="Text input with checkbox" disabled
+                                                            placeholder="REAGENDAR">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MOTIVO DE REAGENDA*</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="Res2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <div class="row py-3">
+
+                                                <div class="col-xl-12 d-flex justify-content-end p-0">
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CARLOS SANDOVAL</option>
+                                                        <option>RAFAEL SERVIN</option>
+                                                    </select>
+
+                                                    <a type="button" class="btn btn-md  bg-success text-white"
+                                                        data-toggle="modal" data-target="#" style="font-size: 15px;"><i
+                                                            class="fas fa-plus"></i></a>
+
+                                                    </a>
+                                                    <a type="button" class="btn btn-md  bg-danger text-white"
+                                                        data-toggle="modal" data-target="#" style="font-size: 15px;"><i
+                                                            class="fas fa-trash"></i></a>
+
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="cal2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">EXAMEN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>PSICOMÉTRICO</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">FECHA DEL EXAMEN</label>
+                                                    <input type="date" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">HORA</label>
+                                                    <input type="time" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">DURACIÓN (HORAS)</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">MEDIO DE COMUNICACIÓN</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>CORREO ELECTRÓNICO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">OBSERVACIONES</label>
+                                                    <textarea class="form-control"
+                                                        aria-label="With textarea"></textarea>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                    <!-- RESPONSABLES -->
+                                    <div class="tab-pane fade show" id="hisInt2" role="tabpanel">
+                                        <div class="container-fluid">
+                                            <table class="table table-hover table-striped  display" id="clientesT"
+                                                style="font-size: 14px;">
+                                                <thead class="thead  w-auto" style="background: #252850; color:WHITE;">
+                                                    <tr>
+                                                        <th scope="col">EXAMEN</th>
+                                                        <th scope="col" style="text-align: center;">FECHA DE LA
+                                                            ENTREVISTA</th>
+                                                        <th scope="col" style="text-align: center;">HORA</th>
+                                                        <th scope="col" style="text-align: center;">MOTIVO DE LA
+                                                            REAGENDAR</th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PSICOMÉTRICO</td>
+                                                        <td align="center">00/00/0000</td>
+                                                        <td align="center">12:23</td>
+                                                        <td align="center">NO LLEGO</td>
+                                                    </tr>
+
+
+
+                                                    <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
+                  <i class="fas fa-file-pdf"></i> </td> -->
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- END  -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button type="button" class="btn text-uppercase bg-danger text-white mx-1"
+                                    data-dismiss="modal"><i class="fas fa-times"></i></button>
+                                <button type="button" class="btn text-uppercase bg-success text-white"><i
+                                        class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Modal Cerrar Sesión-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">Cerrar sesión</h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center py-5">
+                            <h4 class="text-uppercase">
+                                ¿seguro de cerrar sesión?
+                            </h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bg-marine" data-dismiss="modal">No</button>
+                            <a class="btn bg-marine" href="login.html" role="button">Si</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- PREVIEW -->
+            <div class="modal fade" id="Preview" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-white bg-marine">
+                            <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">DESARROLLADOR
+                                .NET SENIOR
+                            </h5>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p><strong> DESARROLLADOR .NET SENIOR</strong></p>
+
+                                    <p><strong>REQUISITOS</strong></p>
+
+                                    <p>Experiencia mínima: 8 años</p>
+                                    <ul>
+                                        <li>.NET</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+
+                                    <p><strong>HABILIDADES</strong></p>
+                                    <ul>
+                                        <li>C#</li>
+                                        <li>ASP Net</li>
+                                        <li>ADO Net</li>
+                                        <li>Javascript</li>
+                                        <li>JQuery</li>
+                                        <li>Soap</li>
+                                        <li>Rest XML</li>
+                                        <li>JSON</li>
+                                        <li>.Net Framework</li>
+                                        <li>.Net Core</li>
+                                        <li>MVC</li>
+                                        <li>ORACLE</li>
+                                        <li>PMi</li>
+                                        <li>CMMi</li>
+                                        <li>ITIL</li>
+                                        <li>ISO</li>
+                                    </ul>
+
+                                    <p><strong>CONOCIMIENTOS DESEABLES:</strong></p>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>F#</li>
+                                        <li>LinQ</li>
+                                        <li>NodeJS</li>
+                                        <li>Base de Datos Hadoop</li>
+                                        <li>Diseño de Arquitecturas</li>
+                                    </ul>
+
+                                    <p><strong>IDIOMAS</strong></p>
+                                    <ul>
+                                        <li> Ingles Intermedio.</li>
+                                    </ul>
+
+
+                                    <p> <strong>SOFT SKILLS:</strong></p>
+                                    <ul>
+                                        <li>Analítico</li>
+                                        <li>Solucionador de problemas</li>
+                                        <li>Comunicación oral</li>
+                                        <li>Escrita efectiva</li>
+                                        <li>Autodidacta</li>
+                                        <l>Capacidad para liderar equipos de trabajo.</l>
+                                    </ul>
+
+                                    <strong>
+                                        <p>OFRECEMOS:</p>
+                                    </strong>
+                                    <ul>
+                                        <li>Sueldo COMPETITIVO CON BASE A EXPERIENCIA</li>
+                                        <li>Seguro Social</li>
+                                        <li>Vacaciones</li>
+                                        <li>Aguinaldo</li>
+                                        <li>Crecimiento a mediano plazo</li>
+                                    </ul>
+
+                                    <p><strong>Zona de trabajo:</strong></p>
+                                    <ul>
+                                        <li>HOME OFFICE TEMPORAL COVID</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn text-uppercase mg-r" data-dismiss="modal">CERRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.s-sidebar').load('includes/sidebar.html')
+        });
+
+        $(document).ready(function () {
+            $('.n-navbar').load('includes/navbar.html')
+        });
+
+        $(document).ready(function () {
+            $('.m-responsivo').load('includes/m-responsivo.html')
+        });
+    </script>
+
+</body>
+
+</html>
