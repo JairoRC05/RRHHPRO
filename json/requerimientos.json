@@ -11,6 +11,8 @@ var requerimientos =
                     editar: '<a href="editar-requisito.html" style="color:black;"><i class="fas fa-edit"></i></a>',
                     detalles: '<a data-toggle="modal" data-target="#UEdit" style="color:black;"><i class="fas fa-eye"></i></a>',
                     descartar: '<a data-toggle="modal" data-target="#Delete" style="color:black;"><i class="fas fa-times"></i></a>',
+                    baja: '<a data-toggle="modal" data-target="#baja-req" style="color:black;"><i class="fas fa-arrow-down"></i></a>',
+                    suspender: '<a data-toggle="modal" data-target="#suspender-req" style="color:black;"><i class="fas fa-ban"></i></a>',
                     restaurar: '<a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#rest" style="color:black;"><i class="fas fa-history"></i></a>'
     }
 ];
