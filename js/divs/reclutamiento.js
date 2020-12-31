@@ -18,10 +18,14 @@
             $('.tabla-consultar').load('includes/Tablas/Candidatos/tabla-consultar.html')
             /*Editar Candidato*/
             $('.title-edit-candidato').load('includes/Titles/title-edit-candidato.html')
+            $('.title-experiencia').load('includes/Titles/title-experiencia.html')
+            $('.title-educacion').load('includes/Titles/title-educacion.html')
             $('.tab-editar').load('includes/Tabs/tab-editar.html')
             $('.tab-datos-generales').load('includes/Tabs/tab-datos-generales.html')
             $('.tab-pane-datos').load('includes/TabPane/datos-generales.html')
             $('.tab-pane-info').load('includes/TabPane/informacion-general.html')
+            $('.tabla-educacion').load('includes/Tablas/Candidatos/tabla-educacion.html')
+            $('.tabla-experiencia').load('includes/Tablas/Candidatos/tabla-experiencia.html')
             
             /*Entrevistas*/
             $('.filtro-entrevistas').load('includes/Filtros/filtro-entrevistas.html')
@@ -52,6 +56,7 @@
             $('.tabla-descartados').load('includes/Tablas/DetalleReq/tabla-descartados.html')
             $('.tabla-finalistas').load('includes/Tablas/DetalleReq/tabla-finalistas.html')
             $('.btn-candidato').load('includes/Buttons/btn-candidato.html')
+            $('.btn-imprimir').load('includes/Buttons/btn-imprimir.html')
            
            
             /*Exámenes Candidato*/
@@ -80,6 +85,8 @@
             $('.nueva-entrevista').load('includes/Modales/nueva-entrevista.html')
             $('.editar-entrevista').load('includes/Modales/editar-entrevista.html')
             $('.detalles-candidato').load('includes/Modales/detalles-candidato.html')
+            $('.agregarEducacion').load('includes/Modales/agregarEducacion.html')
+            $('.agregarExp').load('includes/Modales/agregarExp.html')
         });
 
 

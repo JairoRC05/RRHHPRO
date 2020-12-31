@@ -764,3 +764,18 @@ legend.scheduler-border {
   background: #eee;
   border: rgb(218, 218, 218) 5px solid;
 }
+
+
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+.button-container a {
+  position: absolute;
+  bottom: 3em;
+  right: 0em;
+
+  text-transform: uppercase;
+
+}

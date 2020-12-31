@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>RRHH WEBAPP | INICIO</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link href="css/check.css" rel="stylesheet">
-
-</head>
+<div class="head"></div>
+<title>RRHH WEBAPP | Editar Candidato</title>
 
 <body>
 
@@ -35,6 +19,8 @@
       <div class="container-fluid">
         <div class="container-st">
           <div class="title-edit-candidato"></div>
+        </div>
+        <div class="container-st">
           <div class="row">
             <div class="col-2">
               <div class="tab-editar"></div>
@@ -468,54 +454,14 @@
 
 
                 </div>
+
                 <div class="tab-pane fade " id="v-pills-experiencia" role="tabpanel"
                   aria-labelledby="v-pills-messages-tab">
 
 
-                  <div class="row py-3">
-                    <div class="col-xl-8">
-                      <h1>EXPERIENCIA</h1>
-                    </div>
+                  <div class="title-experiencia"></div>
 
-                    <div class="col-xl-4 d-flex justify-content-end align-items-baseline">
-
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregarExp"><i
-                          class="fas fa-plus"></i></button>
-
-                    </div>
-                  </div>
-
-                  <table class="table table-hover table-hover display" id="clientesT">
-                    <thead class="thead  w-auto">
-                      <tr>
-                        <th scope="col">CLIENTE</th>
-                        <th scope="col">PROYECTO</th>
-                        <th scope="col" style="text-align: center;">FECHA INICIO</th>
-                        <th scope="col" style="text-align: center;">FECHA FINAL</th>
-                        <th scope="col" style="text-align: center;">SALARIO</th>
-                        <th scope="col" style="text-align: center;">EDITAR</th>
-                        <th scope="col" style="text-align: center;">ELIMINAR</th>
-
-
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">UBS</th>
-                        <td style="text-align: leftx|;">XXXXXXXXXXXXXXXXXXX</td>
-                        <td style="text-align: center;">00/00/0000</td>
-                        <td style="text-align: center;">00/00/0000</td>
-                        <td style="text-align: center;">00,000</td>
-
-                        <td style="text-align: center;"><i class="fas fa-edit"></i></td>
-                        <td style="text-align: center;"><i class="fas fa-trash"></i></td>
-                        <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
-                    <i class="fas fa-file-pdf"></i> </td> -->
-
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="tabla-experiencia"></div>
 
                   <div class="modal fade" id="agregarHab23" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -590,274 +536,15 @@
 
                   </div>
 
-                  <div class="modal fade" id="agregarExp" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header  ">
-                          <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
-                            AGREGAR EXPERIENCIA
-                          </h5>
-                          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xl-12">
-                                <ul class="nav nav-tabs nav-justified nav-pills">
 
-                                  <li class="nav-item">
-                                    <a href="#exReg" class="nav-link active" role="tab" data-toggle="tab">REGISTRO</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a href="#exHab" class="nav-link " role="tab" data-toggle="tab">HABILIDADES</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="container-fluid">
-                            <div class="tab-content">
-                              <div class="tab-pane fade show active" id="exReg" role="tabpanel">
-                                <form>
-                                  <div class="container">
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">PROYECTO*:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">CLIENTE*:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">CONSULTORA*:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">SALARIO*:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="number" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">FECHA
-                                        INICIO*: </label>
-                                      <div class="col-sm-12">
-                                        <input type="date" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">FECHA
-                                        FINAL*: </label>
-                                      <div class="col-sm-12">
-                                        <input type="date" class="form-control" id="inputPassword">
-                                      </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">ACTIVIDADES
-                                        DESEMPEÑADAS:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                      </div>
-                                    </div>
-
-
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">PERSONA
-                                        DE CONTACTO:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row ">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">TELÉFONO:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputPassword">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">PAÍS*:
-                                      </label>
-                                      <div class="col-sm-10">
-
-                                        <select class="form-control  w-100">
-                                          <option>MÉXICO</option>
-                                          <option>XXXXXXXXXXXX
-                                          <option>
-                                          <option>XXXXXXXXXXXXXX</option>
-                                        </select>
-                                      </div>
-                                      <div class="col-sm-1">
-                                        <button type="button" class="btn btn-success" data-target="#add"
-                                          data-toggle="modal"><i class=" fas fa-plus"></i></button>
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">CÓDIGO
-                                        POSTAL*:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <input type="number" class="form-control w-100" id="inputPassword"
-                                          placeholder="">
-                                      </div>
-
-                                    </div>
-                                    <div class="form-group row">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">ESTADO*:
-                                      </label>
-                                      <div class="col-sm-10">
-                                        <select class="form-control  w-100">
-                                          <option>CDMX</option>
-                                          <option>XXXXX XXXXX XXXXX</option>
-                                          <option>XXXXX XXXXX XXXXX</option>
-                                          <option>XXXXX XXXXX XXXXX</option>
-
-                                        </select>
-                                      </div>
-                                      <div class="col-sm-2">
-                                        <button type="button" class="btn btn-success" data-target="#add"
-                                          data-toggle="modal"><i class="fas fa-plus"></i></button>
-                                      </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                      <label for="inputPassword" class="col-sm-12 col-form-label">DIRECCIÓN:
-                                      </label>
-                                      <div class="col-sm-12">
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="tab-pane fade show" id="exHab" role="tabpanel">
-                                <div class="container-fluid">
-                                  <form>
-                                    <div class="row">
-
-                                      <divV class="col-xl-12 d-flex px-0 mt-1">
-
-
-
-                                        <select class="form-control">
-                                          <option>MY SQL</option>
-                                          <option>HTML</option>
-                                          <option>CSS</option>
-                                        </select>
-                                        <button class="btn btn-success">
-                                          <i class="fas fa-plus"></i>
-                                        </button>
-
-                                    </div>
-
-                                    <label for="inputPassword" class="col-sm-12 col-form-label">HABILIDADES EN EL
-                                      PROYECTO:
-                                    </label>
-                                    <div class="col-xl-12 d-flex px-0 mt-1 mx-0">
-
-                                      <ul class="list-group w-100">
-                                        <li class="list-group-item">HTML</li>
-                                        <li class="list-group-item">JAVA</li>
-                                        <li class="list-group-item">SQL LITE</li>
-
-                                      </ul>
-                                    </div>
-
-                                </div>
-
-
-
-
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn text-uppercase bg-danger " data-dismiss="modal"><i
-                              class="fas fa-times"></i></button>
-                          <button type="button" class="btn text-uppercase bg-success "><i
-                              class="fas fa-check"></i></button>
-                        </div>
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
 
                 </div>
+
                 <div class="tab-pane fade " id="v-pills-edu" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 
+                  <div class="title-educacion"></div>
+                  <div class="tabla-educacion"></div>
 
-                  <div class="row py-3">
-                    <div class="col-xl-8">
-                    </div>
-
-                    <div class="col-xl-4 d-flex justify-content-end">
-
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregarEdu">
-                        <i class=" fas fa-plus"></i>
-                      </button>
-
-                    </div>
-                  </div>
-
-                  <table class="table table-hover table-hover display" id="clientesT">
-                    <thead class="thead  w-auto">
-                      <tr>
-                        <th scope="col">ESCUELA</th>
-                        <th scope="col">PROFESIÓN</th>
-                        <th scope="col" style="text-align: center;">PROMEDIO</th>
-
-                        <th scope=" col" style="text-align: center;">EDITAR</th>
-                        <th scope="col" style="text-align: center;">ELIMINAR</th>
-
-
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">PREPARATORIA 7</th>
-                        <td>BACHILLERATO GENERAL</td>
-                        <td style="text-align: center;">9.0</td>
-
-
-                        <td style=" text-align: center;"><i class="fas fa-edit"></i></td>
-                        <td style="text-align: center;"><i class="fas fa-trash"></i></td>
-                        <!-- <td><a class="navbar-link btn btn-sm" data-toggle="modal" data-target="#VCliente" style="color:black;">
-                    <i class="fas fa-file-pdf"></i> </td> -->
-
-                      </tr>
-                    </tbody>
-                  </table>
 
                 </div>
               </div>
@@ -880,182 +567,8 @@
   </div>
   </div>
 
-  <div class="modal fade show" id="agregarEdu" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-modal="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header  ">
-          <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">
-            AGREGAR ESCUELA
-          </h5>
-          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">ESCUELA*:
-            </label>
-            <div class="col-sm-10">
-
-              <select class="form-control  w-100">
-
-              </select>
-            </div>
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i
-                  class=" fas fa-plus"></i></button>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">CAMPUS*:
-            </label>
-            <div class="col-sm-10">
-
-              <select class="form-control  w-100">
-
-              </select>
-            </div>
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i
-                  class=" fas fa-plus"></i></button>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">ESCOLARIDAD*:
-            </label>
-            <div class="col-sm-10">
-
-              <select class="form-control  w-100">
-
-              </select>
-            </div>
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i
-                  class=" fas fa-plus"></i></button>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">PROFESIÓN*:
-            </label>
-            <div class="col-sm-10">
-
-              <select class="form-control  w-100">
-
-              </select>
-            </div>
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i
-                  class="fas fa-plus"></i></button>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">PROMEDIO:
-            </label>
-            <div class="col-sm-12">
-              <input class="form-control" type="number">
-
-            </div>
-
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">FECHA
-              INICIO:
-            </label>
-            <div class="col-sm-12">
-              <input class="form-control" type="date">
-
-            </div>
-
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">FECHA
-              FIN:
-            </label>
-            <div class="col-sm-12">
-              <input class="form-control" type="date">
-
-            </div>
-
-          </div>
-
-
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">PAÍS*:
-            </label>
-            <div class="col-sm-10">
-
-              <select class="form-control  w-100">
-                <option>MÉXICO</option>
-                <option>XXXXXXXXXXXX
-                </option>
-                <option>
-                </option>
-                <option>XXXXXXXXXXXXXX</option>
-              </select>
-            </div>
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i
-                  class=" fas fa-plus"></i></button>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">CÓDIGO
-              POSTAL*: </label>
-            <div class="col-sm-12">
-              <input type="number" class="form-control w-100" id="inputPassword" placeholder="">
-            </div>
-            <div class="col-sm-2">
-
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">ESTADO*:
-            </label>
-            <div class="col-sm-10">
-              <select class="form-control  w-100">
-                <option>CDMX</option>
-                <option>XXXXX XXXXX XXXXX</option>
-                <option>XXXXX XXXXX XXXXX</option>
-                <option>XXXXX XXXXX XXXXX</option>
-
-              </select>
-            </div>
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-success" data-target="#add" data-toggle="modal"><i
-                  class="fas fa-plus"></i></button>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-12 col-form-label">DIRECCIÓN:
-            </label>
-            <div class="col-sm-12">
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-          </div>
-
-
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn text-uppercase bg-danger " data-dismiss="modal"><i
-              class="fas fa-times"></i></button>
-          <button type="button" class="btn text-uppercase bg-success "><i class="fas fa-check"></i></button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
-
+  <div class="agregarEducacion"></div>
+  <div class="agregarExp"></div>
 
 
   <div class="modal fade" id="pubExt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -1247,35 +760,15 @@
 
   </div>
 
-  <!-- <div class="row">
-        <div class="col-3">VACANTE</div>
-        <div class="col-2">CREACIÓN</div>
-        <div class="col-2">LÍMITE</div>
-        <div class="col-1">INSCRITOS</div>
-        <div class="col-2">EN PROCES0</div>
-        <div class="col-1">DESCARTADOS</div>
-        <div class="col-1">FINALISTAS</div>
-      </div>
-      <div class="row">
-        <div class="col-3 bg-primary">VACANTE</div>
-        <div class="col-2 bg-primary">01/00/2020</div>
-        <div class="col-2 bg-primary">01/00/2020</div>
-        <div class="col-1 bg-primary">12</div>
-        <div class="col-2 bg-primary">12</div>
-        <div class="col-1 bg-primary">12</div>
-        <div class="col-1 bg-primary">12</div>
-      </div>
-    </div>  -->
-
 
 
   <!--Modal Cerrar Sesión-->
   <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header  ">
-          <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">AGREGAR AL CATÁLOGO</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Agregar al Catálogo</h5>
           <button type="button" class="close " data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -1284,15 +777,15 @@
           <div class="row">
 
             <div class="col-12 mt-1">
-              <label for="exampleFormControlInput1">NOMBRE</label>
+              <label for="exampleFormControlInput1">Nombre</label>
               <input type="text" class="form-control w-100" id="inputPassword" placeholder="">
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn text-uppercase bg-danger " data-dismiss="modal"><i
+          <button type="button" class="btn text-uppercase btn-danger " data-dismiss="modal"><i
               class="fas fa-times"></i></button>
-          <button type="button" class="btn text-uppercase bg-success "><i class="fas fa-check"></i></button>
+          <button type="button" class="btn text-uppercase btn-success "><i class="fas fa-save"></i></button>
         </div>
       </div>
     </div>
